@@ -1,0 +1,3 @@
+[submodule "themes/studio"]
+	path = themes/studio
+	url = git@github.com:mvxt/hexo-theme-studio.git
