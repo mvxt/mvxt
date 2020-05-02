@@ -3,21 +3,7 @@ title: Updates On Web App
 categories:
   - development
   - web apps
-tags:
-  - software engineering
-  - software
-  - development
-  - web apps
-  - javascript
-  - vue.js
-  - node.js
-  - blogging
-  - buefy
-  - nuxt.js
-photos:
-  - null
 date: 2018-12-28 02:52:04
-thumbnail:
 ---
 I ended up taking a break from this project for a while to focus on work and other projects. As of right now, I am in the middle of designing the architecture for the blogging framework I will use for this website.
 

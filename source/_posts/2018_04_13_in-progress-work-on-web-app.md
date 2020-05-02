@@ -3,15 +3,6 @@ title: In-Progress Work On Web App
 categories:
   - development
   - web apps
-tags:
-  - software engineering
-  - software
-  - development
-  - web apps
-  - javascript
-  - vue.js
-  - node.js
-  - blogging
 photos:
   - null
 date: 2018-04-13 10:25:50
