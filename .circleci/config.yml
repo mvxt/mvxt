@@ -1,0 +1,85 @@
+# Author: Michael Vinh Xuan Thanh
+version: 2.1
+
+#####################
+# Common Definitions
+#####################
+orbs:
+  aws-s3: circleci/aws-s3@1.0.15
+
+aliases:
+  - &project_dir "~/mvxt"
+  - &bucket_name "s3://mvxt.me"
+
+executors:
+  node_exec:
+    docker:
+      - image: circleci/node:11.10.0
+    working_directory: *project_dir
+
+############
+# Workflows
+############
+workflows:
+  version: 2.1
+  primary:
+    jobs:
+      - build
+      - approve_deploy:
+          type: approval
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+      - deploy:
+          context: mvxt-prod
+          requires:
+            - approve_deploy
+          filters:
+            branches:
+              only: master
+
+##################
+# Job Definitions
+##################
+jobs:
+  build:
+    executor: node_exec
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run:
+          name: Pull theme submodule
+          command: |
+            git submodule init && git submodule update
+      - run:
+          name: Install node modules
+          command: |
+            yarn
+      - save_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Build static hexo files
+          command: |
+            npx hexo generate
+      - persist_to_workspace:
+          root: .
+          paths: public
+
+  deploy:
+    docker:
+      - image: circleci/python:2.7
+    working_directory: *project_dir
+    steps:
+      - attach_workspace:
+          at: .
+      - aws-s3/sync:
+          from: public
+          to: *bucket_name
+          overwrite: true
