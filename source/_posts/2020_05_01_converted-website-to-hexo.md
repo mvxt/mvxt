@@ -3,6 +3,14 @@ title: Converted Website to Hexo
 categories:
   - development
   - miscellaneous updates
+tags:
+  - blogging
+  - writing
+  - cms
+  - static site generator
+  - hexo
+  - platform
+  - update
 date: 2020-05-01 15:29:01
 ---
 
