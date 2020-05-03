@@ -2,7 +2,6 @@
 title: I donate to the following charities
 ---
 
-<section class="section">
 <table class="table offwhite-bg">
 <tbody>
   <tr>
@@ -87,4 +86,3 @@ title: I donate to the following charities
   </tr>
 </tbody>
 </table>
-</section>

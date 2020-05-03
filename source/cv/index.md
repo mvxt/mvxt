@@ -2,7 +2,6 @@
 title: CV
 ---
 
-<section class="section">
 <table class="table offwhite-bg">
 <tbody>
   <tr>
@@ -97,4 +96,3 @@ title: CV
   </tr>
 </tbody>
 </table>
-</section>
