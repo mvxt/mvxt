@@ -6,22 +6,22 @@ title: I donate to the following charities
 <tbody>
   <tr>
     <th width="33%">
-      <a href="https://www.cawc.org/">
-        <span class="title is-6">Connections for Abused Women and Their Children</span>
-      </a>
-    </th>
-    <td>
-      <span>I believe in fighting against abuse and helping its victims.</span>
-    </td>
-  </tr>
-  <tr>
-    <th width="33%">
       <a href="https://www.charitynavigator.org/">
         <span class="title is-6">Charity Navigator</span>
       </a>
     </th>
     <td>
       <span>I care about vetting charities to ensure donations are used for the benefit of the needy, not to line the pockets of the privileged.</span>
+    </td>
+  </tr>
+  <tr>
+    <th width="33%">
+      <a href="https://www.cawc.org/">
+        <span class="title is-6">Connections for Abused Women and Their Children</span>
+      </a>
+    </th>
+    <td>
+      <span>I believe in fighting against abuse and helping its victims.</span>
     </td>
   </tr>
   <tr>
