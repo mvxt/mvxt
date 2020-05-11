@@ -10,6 +10,6 @@ I graduated with a Bachelor's in Computer Engineering, minor in Computer Science
 
 **For my technical work history**, visit the [CV page](/cv).
 
-**To see my projects**, visit the [Portfolio page](/portfolio). 
+**To see my projects**, visit my [Projects page](/projects). 
 
 **To contact me**, please use my email: michael(DOT)thanh(AT)mvxt.me. Alternatively, reach me via one of my social profiles below.

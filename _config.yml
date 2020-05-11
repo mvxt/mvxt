@@ -15,7 +15,7 @@ timezone: America/Denver
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://www.mvxt.me
 root: /
-permalink: :title/
+permalink: blog/:title/
 permalink_defaults:
 
 # Directory
@@ -87,3 +87,19 @@ stylus:
     sourceRoot: ''
     basePath: .
   plugins: 'nib'
+
+# Lazy Load images for performance
+lazyload:
+  enable: true
+  onlypost: false # optional 
+  loadingImg: /img/loading.gif 
+  isSPA: false # optional 
+
+# Uglify JS files
+uglify:
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - "*.min.js"
+  es6: false

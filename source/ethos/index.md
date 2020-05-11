@@ -1,5 +1,5 @@
 ---
-title: I donate to the following charities
+title: My Ethos
 ---
 
 <table class="table offwhite-bg">
