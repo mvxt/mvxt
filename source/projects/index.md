@@ -126,9 +126,10 @@ title: Projects
           </span>
         </a>
       </p>
+      <hr/>
+      <button class="close button">Close</button>
     </section>
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 
 <!-- Modal AotM -->
@@ -144,9 +145,10 @@ title: Projects
       <p>App of the Month is a monthly newsletter reviewing the best productivity and self-improvement apps for others looking to improve their lives.</p>
       <p>Years of experimenting and trying out different tools has given me a wealth of information about them.</p>
       <p><a href="https://monthlyapp.substack.com/">Check out</a> the newsletter, or <a href="http://bit.ly/monthlyappsub">subscribe today</a>. I don't spam or share email addresses.</p>
+      <hr/>
+      <button class="close button">Close</button>
     </section>
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 
 <!-- Modal Medium -->
@@ -159,12 +161,13 @@ title: Projects
       <p class="subtitle">General Writing</p>
       <hr/>
       <p class="image"><img src="/img/medium-long.jpg" alt="Medium Profile"></p>
-      <p>I write periodically on Medium about a variety of topics. I've contributed to a couple different publications like <a href="https://medium.com/better-programming">Better Programming</a> and <a href="https://medium.com/swlh">The Startup</a>, and I've been featured as a Top Writer in Technology, Productivity, and Self Improvement.</p>
-      <p>The views expressed on these articles are my own, and they do not represent the views of any organizations I'm a part of or employers I work for, past, present, or future.</p>
+      <p>I write periodically on Medium about a variety of topics. I've contributed to a couple different publications like <a href="https://medium.com/better-programming">Better Programming</a>, <a href="https://medium.com/swlh">The Startup</a>, and <a href="https://medium.com/mind-cafe">Mind Cafe</a>. I've also been featured as a Top Writer in Technology, Productivity, and Self Improvement.</p>
+      <p>The views expressed on these articles are my own, and they do not represent the views of any organizations or employers I am, have been, or will be a part of.</p>
       <p><a href="https://medium.com/@michael.thanh">Visit my profile here</a>.</p>
+      <hr/>
+      <button class="close button">Close</button>
     </section>
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 
 <!-- Modal Yggneous -->
@@ -180,9 +183,10 @@ title: Projects
       <p style="padding-top: 10px;">When I was young, I was always interested in music. In middle school and high school, I joined the symphonic and marching bands, and there I nurtured my love for music.</p>
       <p>Ultimately, I ended up graduating and working in tech. However, now and then I like to appease my musical urges by composing and producing pieces for fun.</p>
       <p><a href="https://soundcloud.com/yggneous">Visit my SoundCloud here</a>.</p>
+      <hr/>
+      <button class="close button">Close</button>
     </section>
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 
 <!-- Modal Heartbeat Retro -->
@@ -224,9 +228,10 @@ title: Projects
           </span>
         </a>
       </p>
+      <hr/>
+      <button class="close button">Close</button>
     </section>
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 
 <!-- Modal Noun Project -->
@@ -242,9 +247,10 @@ title: Projects
       <p style="padding-top: 10px;">I like experimenting and improving my skills on various different applications. Although I have no formal graphic design training, I do dabble with various Adobe products. Photoshop and Premiere are required for video and photo editing on the above projects. Another occasional side project is icon design using Adobe Illustrator.</p>
       <p>I've primarily focused my portfolio on a website called <a href="https://thenounproject.com/">The Noun Project</a>, and my icons are mostly focused on game icons.</p>
       <p>Visit my <a href="https://thenounproject.com/orpheus_studios/">Noun Project profile here</a>.</p>
+      <hr/>
+      <button class="close button">Close</button>
     </section>
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 
 <!-- Modal Muser -->
@@ -262,8 +268,9 @@ title: Projects
       <p style="padding-top: 10px;">A while back, I took an online UI/UX course and completed the course with Springboard UX. The ultimate goal of the course was to take us through the UX journey and the various aspects of user experience design.</p>
       <p>Our final project was assembling each component of the course into one long report, and this was a complete UX report for a hypothetical product I was designing. I used a few programs for wireframing and prototyping, most notably Balsamiq and Figma.</p>
       <p>My project was titled "Muser", and it was a hypothetical new journaling app I proposed for this course. See the <a href="https://indd.adobe.com/view/f2d39da8-6842-455f-a857-b3ad57be18db">full report here</a>.</p>
+      <hr/>
+      <button class="close button">Close</button>
     </section>
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 
