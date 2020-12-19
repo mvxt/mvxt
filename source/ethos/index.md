@@ -1,9 +1,20 @@
 ---
 title: My Ethos
 ---
+These are the charities and non-profits I donate to.
 
 <table class="table offwhite-bg">
 <tbody>
+  <tr>
+    <th width="33%">
+      <a href="https://www.amnesty.org/en/">
+        <span class="title is-6">Amnesty International</span>
+      </a>
+    </th>
+    <td>
+      <span>I am grateful for my freedom and safety. I donate so maybe more people may enjoy what I believe are universal human rights.</span>
+    </td>
+  </tr>
   <tr>
     <th width="33%">
       <a href="https://www.charitynavigator.org/">
@@ -26,6 +37,16 @@ title: My Ethos
   </tr>
   <tr>
     <th width="33%">
+      <a href="https://www.doctorswithoutborders.org/">
+        <span class="title is-6">Doctors Without Borders</span>
+      </a>
+    </th>
+    <td>
+      <span>Doctors are the lifeblood of a healthy society and world. I donate to support the volunteers and doctors of MSF, who respond to crises all over the world.</span>
+    </td>
+  </tr>
+  <tr>
+    <th width="33%">
       <a href="https://eji.org/">
         <span class="title is-6">Equal Justice Initiative</span>
       </a>
@@ -41,7 +62,7 @@ title: My Ethos
       </a>
     </th>
     <td>
-      <span>I recognize the value of having a loving family and a stable childhood. Orphans are put in difficult situations, usually through no fault of their own - I donate to help them.</span>
+      <span>I acknowledge how having a loving family and a stable childhood has contributed to my happy life. Orphans are put in difficult situations, usually through no fault of their own - I donate to help them.</span>
     </td>
   </tr>
   <tr>
@@ -61,7 +82,7 @@ title: My Ethos
       </a>
     </th>
     <td>
-      <span>I hate war, but I care about those who choose to lay down their lives for their country. I donate money to aid them.</span>
+      <span>I hate war, but I love those who choose to lay down their lives for their country. I donate money to aid them.</span>
     </td>
   </tr>
   <tr>
@@ -71,7 +92,7 @@ title: My Ethos
       </a>
     </th>
     <td>
-      <span>I recognize the need for better access to healthcare and sex education. I care about making sure women especially have access to the resources and help they need for family planning.</span>
+      <span>I realize the need for better access to healthcare and sex education. I especially want women to have access to the resources and help they need for family planning so that the children born into the world are wanted.</span>
     </td>
   </tr>
   <tr>
@@ -81,7 +102,7 @@ title: My Ethos
       </a>
     </th>
     <td>
-      <span>I recognize the value of education and the lack of access to it for many. I wish to live in a society with more educated people, and I actively donate towards this cause.</span>
+      <span>I understand the value of education and how the lack of access to it impedes success for many. I wish to live in a society with more educated people, and I actively donate towards this cause.</span>
     </td>
   </tr>
 </tbody>

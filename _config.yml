@@ -4,9 +4,9 @@
 
 # Site
 title: Michael Vinh Xuan Thanh
-subtitle: I develop apps and games. I produce multimedia. I write.
+subtitle: Sr. Solutions Engineer. Dabbler of many things.
 description: Michael Vinh Xuan Thanh is a software engineer whose hobbies include music production and writing. Find his latest updates, resume, and portfolio here.
-keywords: blog, software, engineering, music, development, applications, resume, portfolio, personal, website, michael, thanh
+keywords: blog, software, engineering, music, development, applications, resume, portfolio, personal, website, michael, vinny, thanh
 author: Michael Vinh Xuan Thanh
 language: EN
 timezone: America/Denver
@@ -21,8 +21,6 @@ permalink_defaults:
 # Directory
 source_dir: source
 public_dir: public
-archive_dir: archives
-category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:

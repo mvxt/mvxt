@@ -1,6 +1,7 @@
 ---
 title: CV
 ---
+This page is a summary of my professional, technical experience. For a more detailed résumé, visit [my LinkedIn](https://www.linkedin.com/in/michaelthanh/) or reach out to me.
 
 <table class="table offwhite-bg">
 <tbody>
@@ -11,7 +12,7 @@ title: CV
       <span class="subtitle job-date">Mar 2019 - Current</span>
     </th>
     <td>
-      <span class="title is-6">Solutions Engineer</span>
+      <span class="title is-6">Solutions Engineer (2019) <i class="fa fa-arrow-right spacer"></i> Sr. Solutions Engineer (2020)</span>
       <br />
       <span class="subtitle job-skills">CI/CD, DevOps, Sales, Node.js & JavaScript, Go, Bash, Various Tools</span>
       <br /><br />
@@ -29,7 +30,7 @@ title: CV
       <span class="subtitle job-date">Jun 2016 - Mar 2019</span>
     </th>
     <td>
-      <span class="title is-6">Software Engineer</span>
+      <span class="title is-6">Jr. Software Engineer (2016) <i class="fa fa-arrow-right spacer"></i> Software Engineer (2017)</span>
       <br />
       <span class="subtitle job-skills">Java, Python, Bash, XML/XSLT, JavaScript/NodeJS, Project Management, DevOps</span>
       <br /><br />

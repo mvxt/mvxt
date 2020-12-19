@@ -1,8 +1,29 @@
 ---
-title: Projects
+title: Home
+layout: "about"
 ---
+Hi, I'm Michael. My coworkers call me Vinny.
 
+Currently a Senior Solutions Engineer at [CircleCI](https://circleci.com). I work in technical sales, make music, write, and develop stuff.
+
+- **For my technical work history**, visit [my CV page](/cv).
+- **To see the nonprofits I donate to**, visit [the Ethos page](/ethos).
+- **To contact me**, please use my email: michael(DOT)thanh(AT)mvxt.me. Alternatively, reach me via one of my social profiles shown in the footer.
+
+<h1 class="is-size-3 has-text-centered">My Projects</h1>
+<br/>
 <div class="tile is-ancestor">
+  <div class="tile is-parent is-4">
+    <a class="tile is-child box" data-modal="vinnythen00b">
+      <p class="title is-size-5">VinnyTheN00b</p>
+      <p class="subtitle is-size-6">Game, Music, and Code Stream</p>
+      <div class="content">
+        <div class="image is-square">
+          <img src="/img/vinnythen00b-square.png" alt="VinnyTheN00b Square">
+        </div>
+      </div>
+    </a>
+  </div>
   <div class="tile is-parent is-4">
     <a class="tile is-child box" data-modal="sva">
       <p class="title is-size-5">Static Void Academy</p>
@@ -25,26 +46,15 @@ title: Projects
       </div>
     </a>
   </div>
-  <div class="tile is-parent is-4">
-    <a class="tile is-child box" data-modal="medium">
-      <p class="title is-size-5">Medium</p>
-      <p class="subtitle is-size-6">General Writing</p>
-      <div class="content">
-        <div class="image is-square">
-          <img src="/img/medium-square.png" alt="Medium Logo Square">
-        </div>
-      </div>
-    </a>
-  </div>
 </div>
 <div class="tile is-ancestor">
   <div class="tile is-parent is-4">
-    <a class="tile is-child box" data-modal="yggneous">
-      <p class="title is-size-5">Yggneous</p>
-      <p class="subtitle is-size-6">Solo Music Project</p>
+    <a class="tile is-child box" data-modal="medium">
+      <p class="title is-size-5">Medium</p>
+      <p class="subtitle is-size-6">Writing & Blogging</p>
       <div class="content">
         <div class="image is-square">
-          <img src="/img/yggneous-square.jpg" alt="Yggneous Square">
+          <img src="/img/medium-square.png" alt="Medium Logo Square">
         </div>
       </div>
     </a>
@@ -74,6 +84,17 @@ title: Projects
 </div>
 <div class="tile is-ancestor">
   <div class="tile is-parent is-4">
+    <a class="tile is-child box" data-modal="yggneous">
+      <p class="title is-size-5">Yggneous</p>
+      <p class="subtitle is-size-6">Solo Music Project</p>
+      <div class="content">
+        <div class="image is-square">
+          <img src="/img/yggneous-square.jpg" alt="Yggneous Square">
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="tile is-parent is-4">
     <a class="tile is-child box" data-modal="muser">
       <p class="title is-size-5">Muser</p>
       <p class="subtitle is-size-6">UI/UX Project</p>
@@ -86,6 +107,40 @@ title: Projects
   </div>
 </div>
 
+<!-- Modal VinnyTheN00b -->
+
+<div id="vinnythen00b" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card box">
+    <section class="modal-card-body">
+      <p class="title">VinnyTheN00b</p>
+      <p class="subtitle">Game, Music, and Code Stream</p>
+      <hr/>
+      <p class="image"><img src="/img/vinnythen00b-long.gif" alt="VinnyTheN00b"></p>
+      <p>I recently started streaming on Twitch. I do various things from gaming, to music-making, to coding, and I upload the videos <a href="https://www.youtube.com/channel/UCDzHJd_n5L2WboDeNs2_uNQ">to YouTube</a>. Come join me on a stream - would love your support!</p>
+      <p>Alternatively, I'm always looking for more people to play games with. I will play almost any game. Friend me on Steam or reach out to me on Discord! Discord user is <code>VinnyTheN00b#7351</code></p>
+      <p>
+        <a class="footer-social" href="https://twitch.tv/vinnythen00b">
+          <span class="icon">
+            <i class="fab fa-twitch fa-lg"></i>
+          </span>
+        </a>
+        <a class="footer-social" href="https://www.youtube.com/channel/UCDzHJd_n5L2WboDeNs2_uNQ">
+          <span class="icon">
+            <i class="fab fa-youtube fa-lg"></i>
+          </span>
+        </a>
+        <a class="footer-social" href="https://steamcommunity.com/id/vinnythen00b/">
+          <span class="icon">
+            <i class="fab fa-steam fa-lg"></i>
+          </span>
+        </a>
+      </p>
+      <hr/>
+      <button class="close button">Close</button>
+    </section>
+  </div>
+</div>
 <!-- Modal SVA -->
 
 <div id="sva" class="modal">
@@ -96,11 +151,11 @@ title: Projects
       <p class="subtitle">Online Software Academy</p>
       <hr/>
       <p class="image"><img src="/img/sva-long.png" alt="The Static Void Academy"></p>
-      <p>The Static Void Academy is an online software engineering academy. Rather than individual, siloed courses teaching specific concepts, the Academy takes a holistic approach to teaching the foundations and fundamentals.</p>
+      <p>The Static Void Academy is a project I'm working on for software education. Rather than individual, siloed courses teaching specific concepts, the Academy takes a holistic approach to teaching the foundations and fundamentals.</p>
       <p>SVA is split into two distinct "sections": Core and Path. Core modules consist of the fundamentals and basics that all software engineers should know. Path modules cover domain-specific knowledge for an industry or area of the tech stack.</p>
-      <p>For more information, visit the <a href="https://sva.thinkific.com/">course landing page</a>.</p>
+      <p>For more information, visit the <a href="https://www.staticvoidacademy.com">main website</a>.</p>
       <p>
-        <a class="footer-social" href="https://sva.thinkific.com/">
+        <a class="footer-social" href="https://www.staticvoidacademy.com">
           <span class="icon">
             <i class="fas fa-graduation-cap fa-lg"></i>
           </span>
@@ -115,14 +170,14 @@ title: Projects
             <i class="fab fa-twitter fa-lg"></i>
           </span>
         </a>
-        <a class="footer-social" href="https://www.staticvoid.dev/">
-          <span class="icon">
-            <i class="fas fa-code fa-lg"></i>
-          </span>
-        </a>
         <a class="footer-social" href="https://www.youtube.com/channel/UCD9Vpco6dO5GfYOSmipwlvg">
           <span class="icon">
             <i class="fab fa-youtube fa-lg"></i>
+          </span>
+        </a>
+        <a class="footer-social" href="https://medium.com/static-void-academy">
+          <span class="icon">
+            <i class="fab fa-medium fa-lg"></i>
           </span>
         </a>
       </p>
@@ -182,7 +237,7 @@ title: Projects
       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/782653507&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
       <p style="padding-top: 10px;">When I was young, I was always interested in music. In middle school and high school, I joined the symphonic and marching bands, and there I nurtured my love for music.</p>
       <p>Ultimately, I ended up graduating and working in tech. However, now and then I like to appease my musical urges by composing and producing pieces for fun.</p>
-      <p><a href="https://soundcloud.com/yggneous">Visit my SoundCloud here</a>.</p>
+      <p>Visit the <a href="https://soundcloud.com/yggneous">SoundCloud profile</a></p>
       <hr/>
       <button class="close button">Close</button>
     </section>
@@ -246,7 +301,7 @@ title: Projects
       <video width="640" height="360" src="/img/noun-project-long.mp4" type="video/mp4" alt="The Noun Project" autoplay loop muted></video>
       <p style="padding-top: 10px;">I like experimenting and improving my skills on various different applications. Although I have no formal graphic design training, I do dabble with various Adobe products. Photoshop and Premiere are required for video and photo editing on the above projects. Another occasional side project is icon design using Adobe Illustrator.</p>
       <p>I've primarily focused my portfolio on a website called <a href="https://thenounproject.com/">The Noun Project</a>, and my icons are mostly focused on game icons.</p>
-      <p>Visit my <a href="https://thenounproject.com/orpheus_studios/">Noun Project profile here</a>.</p>
+      <p>Visit my <a href="https://thenounproject.com/orpheus_studios/">Noun Project profile</a>.</p>
       <hr/>
       <button class="close button">Close</button>
     </section>
@@ -267,7 +322,8 @@ title: Projects
       </a>
       <p style="padding-top: 10px;">A while back, I took an online UI/UX course and completed the course with Springboard UX. The ultimate goal of the course was to take us through the UX journey and the various aspects of user experience design.</p>
       <p>Our final project was assembling each component of the course into one long report, and this was a complete UX report for a hypothetical product I was designing. I used a few programs for wireframing and prototyping, most notably Balsamiq and Figma.</p>
-      <p>My project was titled "Muser", and it was a hypothetical new journaling app I proposed for this course. See the <a href="https://indd.adobe.com/view/f2d39da8-6842-455f-a857-b3ad57be18db">full report here</a>.</p>
+      <p>My project was titled "Muser", and it was a hypothetical new journaling app I proposed for this course.</p>
+      <p>See the <a href="https://indd.adobe.com/view/f2d39da8-6842-455f-a857-b3ad57be18db">full report here</a>.</p>
       <hr/>
       <button class="close button">Close</button>
     </section>
