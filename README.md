@@ -1,26 +1,15 @@
-# M.V.X.T
+# Michael Vinh Xuan Thanh
 
-Hexo blog source for Michael's personal website and blog.
+Hi there, I'm Michael. 👋
+My coworkers and audience call me Vinny.
 
-## Prereqs
-- Node.js v13.9.0
-- yarn v1.22.0
-- hexo-cli v3.1.0
+I'm a Sr. Solutions Engineer by day, software engineer and musician by night. Check out my ongoing projects:
 
-## Setup
-Run the following steps to get the project setup:
+- [VinnyTheN00b](https://www.twitch.tv/vinnythen00b) - I stream games, music production, and coding.
+- [The Static Void Academy](https://www.staticvoidacademy.com/) - I'm working on an online website for people to learn coding.
+- [App of the Month](https://monthlyapp.substack.com/) - I release a monthly newsletter where I recommend and review productivity/business apps.
+- [Writing](https://medium.com/@michael.thanh) - All of my writing is on Medium. I write about coding, productivity, and occasionally other topics.
 
-```
-# Download deps
-yarn
+For more information about me, such as social media and professional work history, visit my main website linked on the left.
 
-# Build files and watch for changes
-yarn watch
-
-# Start local server
-yarn dev
-
-# Build static files for prod
-yarn generate
-```
-
+**Thanks for stopping by!**
