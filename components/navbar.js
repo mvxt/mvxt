@@ -19,7 +19,7 @@ export default function Navbar() {
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarItems"
-          onClick={() => setBurger(!burger)}
+          onClick={() => {setBurger(!burger)}}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -27,7 +27,7 @@ export default function Navbar() {
         </a>
       </div>
 
-      <div id="navbarItems" className="navbar-menu">
+      <div id="navbarItems" className={"navbar-menu" + (burger ? 'is-active' : '')}>
         <div className="navbar-start">
           {Object.keys(navigation).map(key => {
             return (
