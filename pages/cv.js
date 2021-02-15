@@ -17,12 +17,12 @@ export default function CV() {
       <tbody>
         <tr>
           <th width="25%">
-            <span className="title is-5">CircleCI</span>
+            <span className="title is-6">CircleCI</span>
             <br />
             <span className="subtitle is-6 job-date">Mar 2019 - Current</span>
           </th>
           <td>
-            <span className="title is-5">Solutions Engineer (2019) <FontAwesomeIcon icon={faArrowRight} /> Sr. Solutions Engineer (2020)</span>
+            <span className="title is-6">Solutions Engineer (2019) <FontAwesomeIcon icon={faArrowRight} /> Sr. Solutions Engineer (2020)</span>
             <br />
             <span className="subtitle is-6 job-skills">CI/CD, DevOps, Sales, Node.js & JavaScript, Go, Bash, Various Tools</span>
             <br /><br />
@@ -43,12 +43,12 @@ export default function CV() {
         </tr>
         <tr>
           <th width="25%">
-            <span className="title is-5">Data Ductus, Inc.</span>
+            <span className="title is-6">Data Ductus, Inc.</span>
             <br />
             <span className="subtitle is-6 job-date">Jun 2016 - Mar 2019</span>
           </th>
           <td>
-            <span className="title is-5">Jr. Software Engineer (2016) <FontAwesomeIcon icon={faArrowRight} /> Software Engineer (2017)</span>
+            <span className="title is-6">Jr. Software Engineer (2016) <FontAwesomeIcon icon={faArrowRight} /> Software Engineer (2017)</span>
             <br />
             <span className="subtitle is-6 job-skills">Java, Python, Bash, XML/XSLT, JavaScript/NodeJS, Project Management, DevOps</span>
             <br /><br />
@@ -69,12 +69,12 @@ export default function CV() {
         </tr>
         <tr>
           <th width="25%">
-            <span className="title is-5">Total Benchmark Solution, LLC.</span>
+            <span className="title is-6">Total Benchmark Solution, LLC.</span>
             <br />
             <span className="subtitle is-6 job-date">Nov 2015 - Apr 2016</span>
           </th>
           <td>
-            <span className="title is-5">Software Development Intern</span>
+            <span className="title is-6">Software Development Intern</span>
             <br />
             <span className="subtitle is-6 job-skills">PHP, MySQL, HTML/Javascript</span>
             <br /><br />
@@ -95,12 +95,12 @@ export default function CV() {
         </tr>
         <tr>
           <th width="25%">
-            <span className="title is-5">BIT Systems</span>
+            <span className="title is-6">BIT Systems</span>
             <br />
             <span className="subtitle is-6 job-date">May 2015 - Aug 2015</span>
           </th>
           <td>
-            <span className="title is-5">Software Engineering Intern, R&D</span>
+            <span className="title is-6">Software Engineering Intern, R&D</span>
             <br />
             <span className="subtitle is-6 job-skills">Android, Java, MySQL, HTML/CSS/JavaScript</span>
             <br /><br />
@@ -121,12 +121,12 @@ export default function CV() {
         </tr>
         <tr>
           <th width="25%">
-            <span className="title is-5">ClickFox</span>
+            <span className="title is-6">ClickFox</span>
             <br />
             <span className="subtitle is-6 job-date">May 2014 - Aug 2014</span>
           </th>
           <td>
-            <span className="title is-5">Software Engineering Intern</span>
+            <span className="title is-6">Software Engineering Intern</span>
             <br />
             <span className="subtitle is-6 job-skills">Java, Maven, Hadoop, PostgreSQL, Greenplum, Bash</span>
             <br /><br />
@@ -149,4 +149,4 @@ export default function CV() {
       </table>
     </Layout>
   );
-}
+};
