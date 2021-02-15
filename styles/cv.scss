@@ -3,11 +3,10 @@
 }
 
 .spacer {
-  &:not(:first-of-type) {
-    margin-left: 5px;
-  }
+  margin-right: 5px;
+}
 
-  &:not(:last-of-type) {
-    margin-right: 5px;
-  }
+.separator {
+  margin-right: 5px;
+  margin-left: 5px;
 }

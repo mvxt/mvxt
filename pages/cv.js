@@ -33,7 +33,7 @@ export default function CV() {
               className="spacer"
             />
             Denver, CO
-            <span className="subtitle spacer">|</span>
+            <span className="subtitle separator">|</span>
             <FontAwesomeIcon
               icon={faLink}
               className="spacer"
@@ -59,7 +59,7 @@ export default function CV() {
               className="spacer"
             />
             Longmont, CO
-            <span className="subtitle spacer">|</span>
+            <span className="subtitle separator">|</span>
             <FontAwesomeIcon
               icon={faLink}
               className="spacer"
@@ -85,7 +85,7 @@ export default function CV() {
               className="spacer"
             />
             Fort Collins, CO
-            <span className="subtitle spacer">|</span>
+            <span className="subtitle separator">|</span>
             <FontAwesomeIcon
               icon={faLink}
               className="spacer"
@@ -111,7 +111,7 @@ export default function CV() {
               className="spacer"
             />
             Aurora, CO
-            <span className="subtitle spacer">|</span>
+            <span className="subtitle separator">|</span>
             <FontAwesomeIcon
               icon={faLink}
               className="spacer"
@@ -137,7 +137,7 @@ export default function CV() {
               className="spacer"
             />
             Denver, CO
-            <span className="subtitle spacer">|</span>
+            <span className="subtitle separator">|</span>
             <FontAwesomeIcon
               icon={faLink}
               className="spacer"
