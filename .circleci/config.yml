@@ -77,4 +77,4 @@ jobs:
       - aws-s3/sync:
           from: public
           to: *bucket_name
-          overwrite: true
+          arguments: '--delete'
