@@ -5,7 +5,7 @@ version: 2.1
 # Common Definitions
 #####################
 orbs:
-  aws-s3: circleci/aws-s3@1.0.15
+  aws-s3: circleci/aws-s3@2.0.0
 
 aliases:
   - &project_dir "~/mvxt"
@@ -14,7 +14,7 @@ aliases:
 executors:
   node_exec:
     docker:
-      - image: circleci/node:11.10.0
+      - image: cimg/node:14.15.3
     working_directory: *project_dir
 
 ############
