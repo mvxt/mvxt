@@ -36,12 +36,12 @@ export default function Footer() {
   };
 
   return (
-    <footer class="custom-footer has-text-centered is-size-6">
+    <footer className="custom-footer has-text-centered is-size-6">
       <div>
         {Object.keys(profiles).map(function(key) {
           return (
-            <a key={key} class="footer-social" href={profiles[key].url}>
-              <FontAwesomeIcon icon={profiles[key].icon} />
+            <a key={key} className="footer-social" href={profiles[key].url}>
+              <FontAwesomeIcon icon={profiles[key].icon} size='lg' />
             </a>
           );
         })}

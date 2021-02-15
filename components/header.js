@@ -1,12 +1,12 @@
 export default function Header() {
   return (
-    <section class="hero has-text-centered">
-      <div id="hero-override" class="hero-body">
-        <div class="container">
-          <h1 class="title">
+    <section className="hero has-text-centered">
+      <div id="hero-override" className="hero-body">
+        <div className="container">
+          <h1 className="title">
             Michael Vinh Xuan Thanh
           </h1>
-          <h2 class="subtitle">
+          <h2 className="subtitle">
             Sr. Solutions Engineer. Musician.
           </h2>
         </div>
