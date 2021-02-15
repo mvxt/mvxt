@@ -9,3 +9,5 @@ public/
 .next
 .env
 .env.build
+
+out/

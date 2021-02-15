@@ -1,11 +1,17 @@
+import Head from 'next/head';
+
 import Header from './header';
 import Footer from './footer';
 import Navbar from './navbar';
 
 export default function Layout({ children, ...props }) {
-  const { title } = props;
+  const { tabTitle, title } = props;
 
   return (
+    <>
+    <Head>
+      <title>{tabTitle ? tabTitle : title} - Michael Vinh Xuan Thanh</title>
+    </Head>
     <div id="app" className="columns is-gapless-mobile">
       <div className="column is-full-mobile is-three-fifths-desktop is-offset-one-fifth-desktop">
         <div id="wrapper" className="container">
@@ -27,5 +33,6 @@ export default function Layout({ children, ...props }) {
         <Footer/>
       </div>
     </div>
+    </>
   );
 }

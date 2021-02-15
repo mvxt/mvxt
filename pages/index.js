@@ -126,7 +126,7 @@ export default function Index() {
   }, [])
 
   return (
-    <Layout title="Ongoing Projects">
+    <Layout tabTitle="Home" title="Ongoing Projects">
       <div className="tile is-ancestor">
         <div className="tile is-parent is-3">
           <a className="tile is-child box" data-modal="vinnythen00b">
