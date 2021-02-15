@@ -76,9 +76,12 @@ jobs:
       - run:
           name: Remove extension from non-index pages WTF S3
           command: |
-            mv cv.html cv
-            mv ethos.html ethos
-            mv about.html about
+            mkdir -p cv
+            mkdir -p ethos
+            mkdir -p about
+            mv cv.html cv/index.html
+            mv ethos.html ethos/index.html
+            mv about.html about/index.html
           working_directory: out
       - persist_to_workspace:
           root: .
