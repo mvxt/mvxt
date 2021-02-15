@@ -79,7 +79,7 @@ jobs:
 
   deploy:
     docker:
-      - image: circleci/python:2.7
+      - image: cimg/python:3.9.1
     working_directory: *project_dir
     steps:
       - attach_workspace:
