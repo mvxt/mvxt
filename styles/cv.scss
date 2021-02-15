@@ -1,0 +1,13 @@
+.job-date,.job-skills {
+  font-style: italic;
+}
+
+.spacer {
+  &:not(:first-of-type) {
+    margin-left: 5px;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 5px;
+  }
+}

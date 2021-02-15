@@ -5,7 +5,7 @@ version: 2.1
 # Common Definitions
 #####################
 orbs:
-  aws-s3: circleci/aws-s3@1.0.15
+  aws-s3: circleci/aws-s3@2.0.0
 
 aliases:
   - &project_dir "~/mvxt"
@@ -14,7 +14,7 @@ aliases:
 executors:
   node_exec:
     docker:
-      - image: circleci/node:11.10.0
+      - image: cimg/node:14.15.3
     working_directory: *project_dir
 
 ############
@@ -48,22 +48,6 @@ jobs:
     executor: node_exec
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
-      - run:
-          name: Pull theme submodule
-          command: |
-            git submodule init && git submodule update
-      - run:
-          name: Install node modules
-          command: |
-            yarn
-      - save_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
-          paths:
-            - node_modules
       - run:
           name: Install Git LFS and pull images
           command: |
@@ -74,13 +58,24 @@ jobs:
             ssh-keyscan -H github.com > ~/.ssh/known_hosts
             ssh git@github.com git-lfs-authenticate "${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}" download
             git lfs pull
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
       - run:
-          name: Build static hexo files
+          name: Install node modules
           command: |
-            npx hexo generate
+            yarn
+      - save_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Build next.js app and export static website files
+          command: yarn build
       - persist_to_workspace:
           root: .
-          paths: public
+          paths: out
 
   deploy:
     docker:
@@ -90,6 +85,6 @@ jobs:
       - attach_workspace:
           at: .
       - aws-s3/sync:
-          from: public
+          from: out
           to: *bucket_name
-          overwrite: true
+          arguments: '--delete'

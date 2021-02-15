@@ -1,4 +1,0 @@
----
-title: Topics
-layout: "categories"
----
