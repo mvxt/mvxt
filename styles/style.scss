@@ -33,7 +33,12 @@ $widescreen-enabled: false;
       text-decoration: underline;
     }
   }
-  h2{
+  li {
+    a {
+      text-decoration: underline;
+    }
+  }
+  h2 {
     margin-bottom: 20px;
   }
 }
