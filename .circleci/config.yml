@@ -61,11 +61,11 @@ jobs:
           paths:
             - node_modules
       - run:
-          name: Build static hexo files
+          name: Build next.js app and export static website files
           command: yarn build
       - persist_to_workspace:
           root: .
-          paths: public
+          paths: out
 
   deploy:
     docker:
@@ -75,6 +75,6 @@ jobs:
       - attach_workspace:
           at: .
       - aws-s3/sync:
-          from: public
+          from: out
           to: *bucket_name
           arguments: '--delete'
