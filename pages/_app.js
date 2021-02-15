@@ -1,7 +1,11 @@
 import React from 'react';
 import Head from "next/head";
 
+// FontAwesome stuff
+import { config } from "@fortawesome/fontawesome-svg-core";
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import "../styles/style.scss";
+config.autoAddCss = false;
 
 export default function Mvxt({ Component, pageProps }) {
   let description = "Michael Vinh Xuan Thanh is a Sr. Sales Engineer, software developer, and musician. Read more about his previous and ongoing projects.";

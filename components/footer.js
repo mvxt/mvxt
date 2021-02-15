@@ -7,6 +7,10 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
+import { config } from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
+
 export default function Footer() {
   let profiles = {
     'twitch': {
