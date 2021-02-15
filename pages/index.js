@@ -244,8 +244,7 @@ export default function Index() {
             <h3 className="subtitle">Online Software Academy</h3>
             <hr/>
             <p className="image"><img src="/img/sva-long.png" alt="The Static Void Academy" /></p>
-            <p>The Static Void Academy is a project I'm working on for software education. Rather than individual, siloed courses teaching specific concepts, the Academy takes a holistic approach to teaching the foundations and fundamentals.</p>
-            <p>SVA is split into two distinct "sections": Core and Path. Core modules consist of the fundamentals and basics that all software engineers should know. Path modules cover domain-specific knowledge for an industry or area of the tech stack.</p>
+            <p>The Static Void Academy is a project I'm working on for software education. I'm experimenting with an idea to make software lessons and concepts more digestible and democratizing the process of teaching.</p>
             <p>For more information, visit the <a href="https://www.staticvoidacademy.com">main website</a>.</p>
             <p>{printLinks(staticVoidAcademyLinks)}</p>
             <hr/>
