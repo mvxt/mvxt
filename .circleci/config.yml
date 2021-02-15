@@ -73,6 +73,13 @@ jobs:
       - run:
           name: Build next.js app and export static website files
           command: yarn build
+      - run:
+          name: Remove extension from non-index pages WTF S3
+          command: |
+            mv cv.html cv
+            mv ethos.html ethos
+            mv about.html about
+          working_directory: out
       - persist_to_workspace:
           root: .
           paths: out
