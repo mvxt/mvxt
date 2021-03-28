@@ -5,9 +5,13 @@ export default function Navbar() {
 
   let navigation = {
     Home: '/',
+    Streaming: '/streaming',
+    Coding: '/coding',
+    Music: '/music',
+    "Other Projects": '/other',
     CV: '/cv',
     Ethos: '/ethos',
-    About: '/about'
+    Blog: '/blog'
   };
 
   return (
@@ -28,7 +32,7 @@ export default function Navbar() {
       </div>
 
       <div id="navbarItems" className={"navbar-menu" + (burger ? 'is-active' : '')}>
-        <div className="navbar-start">
+        <div className="navbar-center">
           {Object.keys(navigation).map(key => {
             return (
               <a
@@ -36,7 +40,7 @@ export default function Navbar() {
                 className="navbar-item"
                 href={navigation[key]}
               >
-                {key}
+                <b>{key}</b>
               </a>
             );
           })}

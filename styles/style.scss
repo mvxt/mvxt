@@ -17,13 +17,6 @@ $widescreen-enabled: false;
 
 // Bulma Component Variables
 
-
-// Website Custom Styling
-@import "./footer.scss";
-@import "./navbar.scss";
-@import "./hero.scss";
-@import "./cv.scss";
-
 .article {
   padding-top: 0.5rem;
   flex-shrink: 2;
@@ -57,15 +50,27 @@ a {
 }
 
 // Import only what you need from Bulma
-/*
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+
+@import "../node_modules/bulma/sass/elements/box.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/table.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
-@import "../node_modules/bulma/sass/form/_all.sass";
+
+@import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/components/dropdown.sass";
+@import "../node_modules/bulma/sass/components/modal.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
-@import "../node_modules/bulma/sass/layout/hero.sass";
-@import "../node_modules/bulma/sass/layout/section.sass";
-*/
-@import "../node_modules/bulma/bulma.sass";
+
+// Other Website Custom Styling
+@import "./navbar.scss";
+@import "./footer.scss";
+@import "./hero.scss";
+@import "./cv.scss";
