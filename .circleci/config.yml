@@ -60,16 +60,17 @@ jobs:
             git lfs pull
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
+            - v1.1-dependencies-{{ checksum "package.json" }}
+            - v1.1-dependencies-
       - run:
           name: Install node modules
           command: |
             yarn
       - save_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1.1-dependencies-{{ checksum "package.json" }}
           paths:
             - node_modules
+            - .next/cache
       - run:
           name: Build next.js app and export static website files
           command: yarn build
