@@ -82,6 +82,8 @@ jobs:
               mv ${page}.html ${page}/index.html; \
             done
           working_directory: out
+      - store_artifacts:
+          path: out
       - persist_to_workspace:
           root: .
           paths: out
