@@ -7,7 +7,7 @@ export default function Header() {
             Michael Vinh Xuan Thanh
           </h1>
           <h2 className="subtitle">
-            Sr. Solutions Engineer. Software Developer. Musician.
+            Solutions Engineer. Software Developer. Musician.
           </h2>
         </div>
       </div>
