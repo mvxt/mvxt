@@ -84,7 +84,7 @@ jobs:
       - run:
           name: Remove extension from non-index pages WTF S3
           command: |
-            pages="blog coding cv ethos music other streaming"
+            pages="coding cv downloads ethos hire music other streaming"
             for page in $pages; do \
               mkdir -p "$page"; \
               mv ${page}.html ${page}/index.html; \
