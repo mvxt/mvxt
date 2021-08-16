@@ -23,7 +23,7 @@ export default function Layout({ children, ...props }) {
                 <h1 className="is-size-3 has-text-centered">
                   {title}
                 </h1>
-                <section className="section is-size-5">
+                <section className="section is-size-6">
                   {children}
                 </section>
               </article>

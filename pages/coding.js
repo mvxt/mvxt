@@ -46,7 +46,7 @@ export default function Coding() {
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen={true}
+          allowFullScreen={true}
           className="has-ratio"
         >
         </iframe>

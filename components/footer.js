@@ -40,8 +40,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="custom-footer has-text-centered is-size-6">
-      <div>
+    <footer className="custom-footer is-size-6">
+      <hr/>
+      <div className="has-text-centered footer-icons">
         {Object.keys(profiles).map(function(key) {
           return (
             <a key={key} className="footer-social" href={profiles[key].url}>
@@ -50,7 +51,26 @@ export default function Footer() {
           );
         })}
       </div>
-      Copyright &copy; {new Date().getFullYear()} Michael Vinh Xuan Thanh. Site built with <a href="https://nextjs.org/">Next.js</a> and <a href="https://bulma.io/">Bulma</a>.
+      <div className="container columns is-centered">
+        <div className="column is-4">
+          <b>Miscellaneous</b>
+          <ul>
+            <li><a href="https://blog.mvxt.me/" target="_blank">Blog</a></li>
+            <li><a href="/cv">CV</a></li>
+            <li><a href="/ethos">Ethos</a></li>
+          </ul>
+        </div>
+        <div className="column is-2">
+          <b>Services</b>
+          <ul>
+            <li><a href="/hire">Hire Me</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="has-text-centered">
+        Copyright &copy; {new Date().getFullYear()} Michael Vinh Xuan Thanh.
+        Site built with <a href="https://nextjs.org/">Next.js</a> and <a href="https://bulma.io/">Bulma</a>.
+      </div>
     </footer>
   );
 }

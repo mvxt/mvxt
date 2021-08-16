@@ -8,10 +8,9 @@ export default function Navbar() {
     Streaming: '/streaming',
     Coding: '/coding',
     Music: '/music',
-    "Other Projects": '/other',
-    CV: '/cv',
-    Ethos: '/ethos',
-    Blog: '/blog'
+    'Other Projects': '/other',
+    Downloads: '/downloads',
+    'Hire Me': '/hire'
   };
 
   return (

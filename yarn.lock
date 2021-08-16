@@ -3001,6 +3001,11 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-calendly@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-calendly/-/react-calendly-2.2.1.tgz#7c35f7747e01045dbd77e18ea1eb18adddf373cf"
+  integrity sha512-r9WJ2WNr3hjBFnE8UyFCtJiTy7InME0lghw3gA5BqAMOFe70OtLDINDRAKDSS8O1tTSxJJrFdmZ1PpFSL0NAJA==
+
 react-dom@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.1.tgz#1de2560474ec9f0e334285662ede52dbc5426fc6"

@@ -50,6 +50,17 @@ export default function Index() {
     <Layout tabTitle="Other Projects" title="Other Projects">
       <div className="tile is-ancestor">
         <div className="tile is-parent is-4">
+          <a className="tile is-child box" data-modal="medium">
+            <h2 className="title is-size-5">Medium</h2>
+            <h3 className="subtitle is-size-6">Writing & Blogging</h3>
+            <div className="content">
+              <div className="image is-square">
+                <img src="/img/medium-square.png" alt="Medium Logo Square" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="tile is-parent is-4">
           <a className="tile is-child box" data-modal="aotm">
             <h2 className="title is-size-5">App of the Month</h2>
             <h3 className="subtitle is-size-6">Monthly App Reviews</h3>
@@ -71,6 +82,8 @@ export default function Index() {
             </div>
           </a>
         </div>
+      </div>
+      <div className="tile is-ancestor">
         <div className="tile is-parent is-4">
           <a className="tile is-child box" data-modal="muser">
             <h2 className="title is-size-5">Muser</h2>
@@ -83,6 +96,22 @@ export default function Index() {
           </a>
         </div>
       </div>
+      <div id="medium" className="modal">
+        <div className="modal-background"></div>
+        <div className="modal-card box">
+          <section className="modal-card-body">
+            <h2 className="title">Medium</h2>
+            <h3 className="subtitle">General Writing</h3>
+            <hr/>
+            <p className="image"><img src="/img/medium-long.jpg" alt="Medium Profile" /></p>
+            <p>I write periodically on Medium about a variety of topics, and I've contributed to several different publications like <a href="https://medium.com/better-programming">Better Programming</a>, <a href="https://medium.com/swlh">The Startup</a>, <a href="https://medium.com/mind-cafe">Mind Cafe</a>, and <a href="https://psiloveyou.xyz/">P.S. I Love You</a> among others. I've also been featured as a Top Writer in Technology, Productivity, and Self Improvement.</p>
+            <p>The views expressed on these articles are my own, and they do not represent the views of any organizations or employers I have been, am, or will be a part of.</p>
+            <p><a href="https://blog.mvxt.me" target="_blank">Visit my blog here</a>.</p>
+            <hr/>
+            <button className="close button">Close</button>
+          </section>
+        </div>
+      </div>
       <div id="aotm" className="modal">
         <div className="modal-background"></div>
         <div className="modal-card box">
@@ -93,7 +122,8 @@ export default function Index() {
             <p className="image"><img src="/img/aotm-long.png" alt="App of the Month" /></p>
             <p>App of the Month is a monthly newsletter reviewing the best productivity and self-improvement apps for others looking to improve their lives.</p>
             <p>Years of experimenting and trying out different tools has given me a wealth of information about them.</p>
-            <p><a href="https://monthlyapp.substack.com/">Check out</a> the newsletter, or <a href="http://bit.ly/monthlyappsub">subscribe today</a>. I don't spam or share email addresses.</p>
+            <p><a href="https://monthlyapp.substack.com/">Check out</a> the newsletter or subscribe below. I don't spam or resell email addresses.</p>
+            <iframe src="https://monthlyapp.substack.com/embed" width="480" height="320" style={{ border:"1px solid #EEE", background:"white", frameborder: 0, scrolling:"no", margin: "0 auto", display: "block" }}></iframe>
             <hr/>
             <button className="close button">Close</button>
           </section>
