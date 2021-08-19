@@ -16,6 +16,8 @@ $fullhd-enabled: false;
 $widescreen-enabled: false;
 
 // Bulma Component Variables
+// Searchbar/input
+$input-icon-active-color: $primary;
 
 .article {
   padding-top: 0.5rem;
@@ -64,10 +66,16 @@ a {
 @import "../node_modules/bulma/sass/elements/table.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
 
+@import "../node_modules/bulma/sass/form/shared.sass";
+@import "../node_modules/bulma/sass/form/tools.sass";
+@import "../node_modules/bulma/sass/form/input-textarea.sass";
+@import "../node_modules/bulma/sass/form/checkbox-radio.sass";
+
 @import "../node_modules/bulma/sass/components/card.sass";
 @import "../node_modules/bulma/sass/components/dropdown.sass";
 @import "../node_modules/bulma/sass/components/modal.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/panel.sass";
 
 // Other Website Custom Styling
 @import "./navbar.scss";
@@ -76,3 +84,4 @@ a {
 @import "./cv.scss";
 @import "./hire.scss";
 @import "./projects.scss";
+@import "./downloads.scss";
