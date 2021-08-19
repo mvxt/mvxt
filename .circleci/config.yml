@@ -84,7 +84,7 @@ jobs:
       - run:
           name: Remove extension from non-index pages WTF S3
           command: |
-            pages=$(ls pages)
+            pages=$(ls ../pages)
 
             for page in $pages; do
               no_ext=$(echo $page | cut -f 1 -d '.');
