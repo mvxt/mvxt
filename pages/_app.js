@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from "next/head";
+import ReactGA from 'react-ga';
 
 // FontAwesome stuff
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -13,6 +14,10 @@ export default function Mvxt({ Component, pageProps }) {
   const [kofiLoaded, setKofiLoaded] = React.useState(false);
 
   React.useEffect(() => {
+    // Google Analytics setup
+    ReactGA.initialize('UA-82631953-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     const script = document.createElement('script');
     script.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
     script.async = true;
