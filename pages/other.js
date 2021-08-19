@@ -18,7 +18,30 @@ import {
   faStar
 } from '@fortawesome/free-solid-svg-icons';
 
-export default function Index() {
+export default function Other() {
+  let staticVoidAcademyLinks = {
+    'sva': {
+      icon: faGraduationCap,
+      url: 'https://www.staticvoidacademy.com'
+    },
+    'github': {
+      icon: faGithub,
+      url: 'https://github.com/Static-Void-Academy'
+    },
+    'twitter': {
+      icon: faTwitter,
+      url: 'https://twitter.com/SV_Academy'
+    },
+    'youtube': {
+      icon: faYoutube,
+      url: 'https://www.youtube.com/channel/UCD9Vpco6dO5GfYOSmipwlvg'
+    },
+    'medium': {
+      icon: faMediumM,
+      url: 'https://medium.com/static-void-academy'
+    }
+  };
+
   const handleClickModal = event => {
     let m = document.getElementById(event.currentTarget.dataset.modal.toString());
     let html = document.querySelector('html');
@@ -50,6 +73,17 @@ export default function Index() {
     <Layout tabTitle="Other Projects" title="Other Projects">
       <div className="tile is-ancestor">
         <div className="tile is-parent is-4">
+          <a className="tile is-child box" data-modal="sva">
+            <h2 className="title is-size-5">Static Void Academy</h2>
+            <h3 className="subtitle is-size-6">Online Code Academy</h3>
+            <div className="content">
+              <div className="image is-square">
+                <img src="/img/sva-square.png" alt="The Static Void Academy Square" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="tile is-parent is-4">
           <a className="tile is-child box" data-modal="medium">
             <h2 className="title is-size-5">Medium</h2>
             <h3 className="subtitle is-size-6">Writing & Blogging</h3>
@@ -71,6 +105,8 @@ export default function Index() {
             </div>
           </a>
         </div>
+      </div>
+      <div className="tile is-ancestor">
         <div className="tile is-parent is-4">
           <a className="tile is-child box" data-modal="noun-project">
             <h2 className="title is-size-5">The Noun Project</h2>
@@ -83,6 +119,10 @@ export default function Index() {
           </a>
         </div>
       </div>
+
+      <h1 className="is-size-3 has-text-centered section-padding">
+        Previous Projects
+      </h1>
       <div className="tile is-ancestor">
         <div className="tile is-parent is-4">
           <a className="tile is-child box" data-modal="muser">
@@ -94,6 +134,36 @@ export default function Index() {
               </div>
             </div>
           </a>
+        </div>
+      </div>
+
+      { /* MODALS */ }
+      <div id="sva" className="modal">
+        <div className="modal-background"></div>
+        <div className="modal-card box">
+          <section className="modal-card-body">
+            <h2 className="title">Static Void Academy</h2>
+            <h3 className="subtitle">Online Software Academy</h3>
+            <hr/>
+            <figure className="image is-16by9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Ggr2BSF8bLA"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen={true}
+                className="has-ratio"
+              >
+              </iframe>
+            </figure>
+            <p>The Static Void Academy is a project I'm working on for software education. I'm experimenting with an idea to make software lessons and concepts more digestible and democratizing the process of teaching.</p>
+            <p>For more information, visit the <a href="https://www.staticvoidacademy.com">main website</a>.</p>
+            <p>{printLinks(staticVoidAcademyLinks)}</p>
+            <hr/>
+            <button className="close button">Close</button>
+          </section>
         </div>
       </div>
       <div id="medium" className="modal">
