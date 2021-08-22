@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Fuse from 'fuse.js'
 
 import {
   faExclamationTriangle,
@@ -15,7 +16,10 @@ import {
 import Layout from '../components/layout';
 import Loader from '../components/loader';
 
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_PUB_API_KEY)
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.NEXT_PUBLIC_SUPABASE_PUB_API_KEY
+);
 
 export default function Downloads() {
   const [currentTab, setCurrentTab] = useState('all');
@@ -23,6 +27,8 @@ export default function Downloads() {
   const [isLoading, setIsLoading] = useState(false);
   const [allItems, setAllItems] = useState([]);
   const [items, setItems] = useState([]);
+  const [fuse, setFuse] = useState(null);
+  const [search, setSearch] = useState('');
 
   const inactiveClass = "download-link";
   const activeClasses = "is-active has-text-primary has-text-weight-bold " + inactiveClass;
@@ -67,6 +73,14 @@ export default function Downloads() {
     );
   };
 
+  const filterItems = (e) => {
+    if (e.target.value) {
+      setItems(fuse.search(e.target.value).map(item => item.item));
+    } else {
+      setItems(allItems.filter(item => item.type === currentTab));
+    }
+  };
+
   const getAllItems = async () => {
     setIsLoading(true);
     const { data, error } = await supabase
@@ -93,6 +107,14 @@ export default function Downloads() {
   }, []);
 
   useEffect(() => {
+    const options = {
+      keys: ['name']
+    };
+
+    setFuse(new Fuse(items, options));
+  }, [items]);
+
+  useEffect(() => {
     if (currentTab === 'all') {
       setItems(allItems);
     } else {
@@ -111,7 +133,12 @@ export default function Downloads() {
       <div className="panel is-primary">
         <div className="panel-block">
           <div className="control has-icons-left">
-            <input className="input is-primary" type="text" placeholder="Search" />
+            <input
+              className="input is-primary"
+              type="text"
+              onChange={filterItems}
+              placeholder="Search items"
+            />
             <FontAwesomeIcon
               icon={faSearch}
               size='xs'
