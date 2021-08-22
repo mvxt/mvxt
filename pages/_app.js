@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from "next/head";
+import ReactGA from 'react-ga';
 
 // FontAwesome stuff
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -9,6 +10,33 @@ config.autoAddCss = false;
 
 export default function Mvxt({ Component, pageProps }) {
   let description = "Michael Vinh Xuan Thanh is a Sr. Sales Engineer, software developer, and musician. Read more about his previous and ongoing projects.";
+
+  const [kofiLoaded, setKofiLoaded] = React.useState(false);
+
+  React.useEffect(() => {
+    // Google Analytics setup
+    ReactGA.initialize('UA-82631953-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
+    const script = document.createElement('script');
+    script.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
+    script.async = true;
+    script.defer = true;
+    script.crossOrigin = 'anonymous';
+    script.onload = () => setKofiLoaded(true);
+    document.body.append(script);
+  }, []);
+
+  React.useEffect(() => {
+    if (!kofiLoaded) return;
+
+    window.kofiWidgetOverlay.draw('mvxt1', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Tip Me',
+        'floating-chat.donateButton.background-color': '#64171a',
+        'floating-chat.donateButton.text-color': '#fff'
+      });
+  }, [kofiLoaded]);
 
   return (
     <>

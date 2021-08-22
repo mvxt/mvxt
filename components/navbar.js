@@ -6,10 +6,9 @@ export default function Navbar() {
   let navigation = {
     Home: '/',
     Streaming: '/streaming',
-    Coding: '/coding',
     Music: '/music',
     'Other Projects': '/other',
-    Downloads: '/downloads',
+    'Resources & Downloads': '/downloads',
     'Hire Me': '/hire'
   };
 

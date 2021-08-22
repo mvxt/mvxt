@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
       <div className="has-text-centered">
         Copyright &copy; {new Date().getFullYear()} Michael Vinh Xuan Thanh.
-        Site built with <a href="https://nextjs.org/">Next.js</a> and <a href="https://bulma.io/">Bulma</a>.
+        Site built with <a href="https://nextjs.org/">Next.js</a>, <a href="https://bulma.io/">Bulma</a>, <a href="https://aws.amazon.com/s3/">S3</a>, <a href="https://aws.amazon.com/lambda/">Lambda</a>, and <a href="https://supabase.io/">Supabase</a>.
       </div>
     </footer>
   );
