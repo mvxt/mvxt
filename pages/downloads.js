@@ -77,11 +77,19 @@ export default function Downloads() {
     if (e.target.value) {
       setItems(fuse.search(e.target.value).map(item => item.item));
     } else {
+      getAllItemsForTab();
+    }
+  };
+
+  const getAllItemsForTab = () => {
+    if (currentTab === 'all') {
+      setItems(allItems);
+    } else {
       setItems(allItems.filter(item => item.type === currentTab));
     }
   };
 
-  const getAllItems = async () => {
+  const querySupabase = async () => {
     setIsLoading(true);
     const { data, error } = await supabase
       .from('downloads')
@@ -103,7 +111,7 @@ export default function Downloads() {
   };
 
   useEffect(() => {
-    getAllItems();
+    querySupabase();
   }, []);
 
   useEffect(() => {
@@ -115,11 +123,7 @@ export default function Downloads() {
   }, [items]);
 
   useEffect(() => {
-    if (currentTab === 'all') {
-      setItems(allItems);
-    } else {
-      setItems(allItems.filter(item => item.type === currentTab));
-    }
+    getAllItemsForTab();
   }, [currentTab]);
 
   return (
