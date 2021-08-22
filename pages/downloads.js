@@ -18,11 +18,10 @@ import Loader from '../components/loader';
 const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_PUB_API_KEY)
 
 export default function Downloads() {
-  const [showFree, setShowFree] = useState(true);
-  const [showPaid, setShowPaid] = useState(true);
   const [currentTab, setCurrentTab] = useState('all');
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [allItems, setAllItems] = useState([]);
   const [items, setItems] = useState([]);
 
   const inactiveClass = "download-link";
@@ -53,6 +52,7 @@ export default function Downloads() {
         className="panel-block"
         href={item.link}
         key={item.name}
+        target="_blank"
       >
         <FontAwesomeIcon
           icon={icon}
@@ -67,30 +67,20 @@ export default function Downloads() {
     );
   };
 
-  const getItems = async (type) => {
+  const getAllItems = async () => {
     setIsLoading(true);
-    const { data, error } = type === 'all' ? await supabase
+    const { data, error } = await supabase
       .from('downloads')
-      .select() : await supabase
-      .from('downloads')
-      .select()
-      .eq('type', type);
+      .select();
 
     if (error) {
       setIsError(true);
     }
     else {
+      setAllItems(data);
       setItems(data);
       setIsLoading(false);
     }
-  };
-
-  const handleFreeToggle = () => {
-    setShowFree(!showFree);
-  };
-
-  const handlePaidToggle = () => {
-    setShowPaid(!showPaid);
   };
 
   const setActive = (tab) => (e) => {
@@ -99,11 +89,25 @@ export default function Downloads() {
   };
 
   useEffect(() => {
-    getItems(currentTab);
+    getAllItems();
+  }, []);
+
+  useEffect(() => {
+    if (currentTab === 'all') {
+      setItems(allItems);
+    } else {
+      setItems(allItems.filter(item => item.type === currentTab));
+    }
   }, [currentTab]);
 
   return (
     <Layout title="Resources & Downloads">
+      <p>
+        Here's a directory of free and paid resources. Anything not owned by me is clearly marked as such.
+      </p>
+      <p>
+        <b>DISCLAIMER:</b> These resources are provided as-is and without any guarantees or warranties. I assume no responsibility or liability for anything that happens should you use these resources.
+      </p>
       <div className="panel is-primary">
         <div className="panel-block">
           <div className="control has-icons-left">
@@ -113,26 +117,6 @@ export default function Downloads() {
               size='xs'
               className='icon is-left search-icon'
             />
-          </div>
-          <div className="panel-block level">
-            <div className="level-item has-text-centered">
-              <label className="checkbox">
-                <input
-                  type="checkbox"
-                  checked={showPaid}
-                  onChange={handlePaidToggle}
-                />Paid
-              </label>
-            </div>
-            <div className="level-item has-text-centered">
-              <label className="checkbox">
-                <input
-                  type="checkbox"
-                  checked={showFree}
-                  onChange={handleFreeToggle}
-                />Free
-              </label>
-            </div>
           </div>
         </div>
         <div className="panel-tabs">
@@ -156,7 +140,7 @@ export default function Downloads() {
           </a>
           <a
             className={currentTab.toLowerCase() === "ebooks" ? activeClasses : inactiveClass}
-            onClick={setActive("ebooks")}
+            onClick={setActive("ebook")}
           >
             eBooks
           </a>
@@ -168,7 +152,7 @@ export default function Downloads() {
           </a>
           <a
             className={currentTab.toLowerCase() === "links" ? activeClasses : inactiveClass}
-            onClick={setActive("links")}
+            onClick={setActive("link")}
           >
             Links
           </a>
