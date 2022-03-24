@@ -12,26 +12,24 @@ export default function Layout({ children, ...props }) {
     <Head>
       <title>{tabTitle ? tabTitle : title} - Michael Vinh Xuan Thanh</title>
     </Head>
-    <div id="app" className="columns is-gapless-mobile">
-      <div className="column is-full-mobile is-three-fifths-desktop is-offset-one-fifth-desktop">
-        <div id="wrapper" className="container">
-          <div className="columns">
-            <div className="column auto">
-              <Header/>
-              <Navbar/>
-              <article className="article">
-                <h1 className="is-size-3 has-text-centered">
-                  {title}
-                </h1>
-                <section className="section is-size-6">
-                  {children}
-                </section>
-              </article>
-            </div>
+    <div id="app" className="grid grid-cols-1 bg-white">
+      <div id="wrapper" className="px-8">
+        <div className="columns">
+          <div className="column auto">
+            <Header/>
+            <Navbar/>
+            <article className="article">
+              <h1 className="is-size-3 has-text-centered">
+                {title}
+              </h1>
+              <section className="section is-size-6">
+                {children}
+              </section>
+            </article>
           </div>
-          </div>
-        <Footer/>
+        </div>
       </div>
+      <Footer/>
     </div>
     </>
   );

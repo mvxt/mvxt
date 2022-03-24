@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faTwitch } from '@fortawesome/free-brands-svg-icons';
@@ -40,36 +42,21 @@ export default function Footer() {
   };
 
   return (
-    <footer className="custom-footer is-size-6">
-      <hr/>
-      <div className="has-text-centered footer-icons">
-        {Object.keys(profiles).map(function(key) {
-          return (
-            <a key={key} className="footer-social" href={profiles[key].url}>
-              <FontAwesomeIcon icon={profiles[key].icon} size='lg' />
-            </a>
-          );
-        })}
-      </div>
-      <div className="container columns is-centered">
-        <div className="column is-4">
-          <b>Miscellaneous</b>
-          <ul>
-            <li><a href="https://blog.mvxt.me/" target="_blank">Blog</a></li>
-            <li><a href="/cv">CV</a></li>
-            <li><a href="/ethos">Ethos</a></li>
-          </ul>
-        </div>
-        <div className="column is-2">
-          <b>Services</b>
-          <ul>
-            <li><a href="/hire">Hire Me</a></li>
-          </ul>
-        </div>
-      </div>
-      <div className="has-text-centered">
-        Copyright &copy; {new Date().getFullYear()} Michael Vinh Xuan Thanh.
-        Site built with <a href="https://nextjs.org/">Next.js</a>, <a href="https://bulma.io/">Bulma</a>, <a href="https://aws.amazon.com/s3/">S3</a>, and <a href="https://supabase.io/">Supabase</a>.
+    <footer className="text-center lg:text-left bg-gray-50 text-gray-600">
+      <div className="text-center p-6 bg-gray-200">
+        <p>
+          {Object.keys(profiles).map(function(key) {
+            return (
+              <a key={key} className="footer-social" href={profiles[key].url}>
+                <FontAwesomeIcon icon={profiles[key].icon} size='lg' />
+              </a>
+            );
+          })}
+        </p>
+        <p className="mt-2">
+          Copyright &copy; {new Date().getFullYear()} Michael Vinh Xuan Thanh.
+          Site built with <a href="https://nextjs.org/">Next.js</a>, <a href="https://tailwindcss.com/">Tailwind CSS</a>, <a href="https://aws.amazon.com/s3/">S3</a>, and <a href="https://supabase.io/">Supabase</a>.
+        </p>
       </div>
     </footer>
   );

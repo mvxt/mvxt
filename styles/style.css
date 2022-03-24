@@ -1,10 +1,6 @@
-@charset "utf-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-// Import fonts
-@import url('https://fonts.googleapis.com/css?family=Exo');
 
 .article {
   padding-top: 0.5rem;
@@ -38,11 +34,3 @@ a {
   }
 }
 
-// Other Website Custom Styling
-@import "./navbar.scss";
-@import "./footer.scss";
-@import "./hero.scss";
-@import "./cv.scss";
-@import "./hire.scss";
-@import "./projects.scss";
-@import "./downloads.scss";
