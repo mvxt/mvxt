@@ -1,10 +1,10 @@
 import Layout from '../components/layout';
 
-export default function About() {
+export default function Index() {
   return (
-    <Layout title="Home">
+    <Layout title="Index">
       <p>Hi, I'm Michael. My coworkers call me Vinny.</p>
-      <p>Currently a Solutions Engineer at <a href="https://www.twilio.com/">Twilio</a>. I work in technical sales, make music, write, and develop stuff.</p>
+      <p>Currently a Sr. Solutions Engineer at <a href="https://firehydrant.io/">FireHydrant</a>. I work in technical sales, make music, write, and develop stuff.</p>
       <ul>
         <li><b>To view my current projects</b>, use the navigation menu above.</li>
         <li><b>For my technical work history</b>, visit <a href="/cv">my CV</a>.</li>

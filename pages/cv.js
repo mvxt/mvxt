@@ -10,13 +10,24 @@ import {
 export default function CV() {
   let jobs = [
     {
+      title: 'FireHydrant',
+      date: 'Feb 2022 - Current',
+      positions: [
+        'Sr. Solutions Engineer (2022)',
+      ],
+      skills: 'Sales, DevOps, Observability/Monitoring Tools, Incident Management, Terraform, JavaScript',
+      description: 'FireHydrant is the reliability platform for every developer. We provide a cohesive platform that ties together all your integrations automates your incident management process because we envision a world where all software is reliable.',
+      location: 'Denver, CO',
+      href: 'https://firehydrant.io/'
+    },
+    {
       title: 'Twilio',
-      date: 'Jun 2021 - Current',
+      date: 'Jun 2021 - Jan 2022',
       positions: [
         'Solutions Engineer, Growth (2021)',
       ],
       skills: 'Sales, Node.js & JavaScript, Twilio Platform',
-      description: 'Twilio is cloud communications as a service, and our goal is to fuel the future of communications.',
+      description: 'Twilio is cloud communications as a service. We deliver layers of software and APIs on top of telecom networks to help other software companies build the future of communications.',
       location: 'Denver, CO',
       href: 'https://www.twilio.com/'
     },
@@ -120,7 +131,7 @@ export default function CV() {
               icon={faLink}
               className="spacer"
             />
-            <a href={job.href}>{job.title}</a>
+            <a target="_blank" href={job.href}>{job.title}</a>
           </span>
         </td>
       </tr>
@@ -130,7 +141,7 @@ export default function CV() {
   return (
     <Layout title="CV">
       <p>
-        Here is a summary of my professional experience. For more details, visit <a href="https://www.linkedin.com/in/michaelthanh/">my LinkedIn</a> or reach out to me.
+        Here is a summary of my professional (technical) experience. For more details and a complete history, visit <a href="https://www.linkedin.com/in/michaelthanh/">my LinkedIn</a> or reach out to me.
       </p>
       <table className="table offwhite-bg">
       <tbody>

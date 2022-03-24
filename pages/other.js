@@ -57,6 +57,10 @@ export default function Other() {
     });
   };
 
+  const visit = (url) => {
+    window.open(url, '_blank');
+  };
+
   React.useEffect(() => {
     document.querySelectorAll('a.tile').forEach(t => {
       t.addEventListener('click', handleClickModal);
@@ -84,6 +88,17 @@ export default function Other() {
           </a>
         </div>
         <div className="tile is-parent is-4">
+          <a className="tile is-child box" data-modal="mm">
+            <h2 className="title is-size-5">Music Mesh</h2>
+            <h3 className="subtitle is-size-6">Music Web App</h3>
+            <div className="content">
+              <div className="image is-square">
+                <img src="/img/mm-square.png" alt="Music Mesh Logo Square" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="tile is-parent is-4">
           <a className="tile is-child box" data-modal="medium">
             <h2 className="title is-size-5">Medium</h2>
             <h3 className="subtitle is-size-6">Writing & Blogging</h3>
@@ -94,6 +109,8 @@ export default function Other() {
             </div>
           </a>
         </div>
+      </div>
+      <div className="tile is-ancestor">
         <div className="tile is-parent is-4">
           <a className="tile is-child box" data-modal="aotm">
             <h2 className="title is-size-5">App of the Month</h2>
@@ -105,8 +122,6 @@ export default function Other() {
             </div>
           </a>
         </div>
-      </div>
-      <div className="tile is-ancestor">
         <div className="tile is-parent is-4">
           <a className="tile is-child box" data-modal="noun-project">
             <h2 className="title is-size-5">The Noun Project</h2>
@@ -159,13 +174,32 @@ export default function Other() {
               </iframe>
             </figure>
             <p>The Static Void Academy is a project I'm working on for software education. I'm experimenting with an idea to make software lessons and concepts more digestible and democratizing the process of teaching.</p>
-            <p>For more information, visit the <a href="https://www.staticvoidacademy.com">main website</a>.</p>
+            <button className="button is-primary bottom-padding" onClick={() => visit('https://www.staticvoidacademy.com')}>Visit website</button>
             <p>{printLinks(staticVoidAcademyLinks)}</p>
             <hr/>
             <button className="close button">Close</button>
           </section>
         </div>
       </div>
+
+      <div id="mm" className="modal">
+        <div className="modal-background"></div>
+        <div className="modal-card box">
+          <section className="modal-card-body">
+            <h2 className="title">Music Mesh</h2>
+            <h3 className="subtitle">Music Web App</h3>
+            <hr/>
+            <p className="image"><img src="/img/mm-long.gif" alt="Music Mesh" /></p>
+            <p>When we were young, there was an awesome project by Batuhan Bozkurt (a.k.a. Earslap) called Otomata. It's basically a grid with moving arrows that played notes when they hit the edges.</p>
+            <p>That project was actually a substantial influence for me getting into music production, as I would construct elaborate grids on Otomata and then write down the random melodies that played.</p>
+            <p>Since then, the project has largely gone unmaintained. I partnered together with a friend to reconstruct the same idea, but accessible via JavaScript and the browser (as opposed to Flash).</p>
+            <button className="button is-primary" onClick={() => visit('https://www.musicmesh.app/')}>See project</button>
+            <hr/>
+            <button className="close button">Close</button>
+          </section>
+        </div>
+      </div>
+
       <div id="medium" className="modal">
         <div className="modal-background"></div>
         <div className="modal-card box">
@@ -176,7 +210,7 @@ export default function Other() {
             <p className="image"><img src="/img/medium-long.jpg" alt="Medium Profile" /></p>
             <p>I write periodically on Medium about a variety of topics, and I've contributed to several different publications like <a href="https://medium.com/better-programming">Better Programming</a>, <a href="https://medium.com/swlh">The Startup</a>, <a href="https://medium.com/mind-cafe">Mind Cafe</a>, and <a href="https://psiloveyou.xyz/">P.S. I Love You</a> among others. I've also been featured as a Top Writer in Technology, Productivity, and Self Improvement.</p>
             <p>The views expressed on these articles are my own, and they do not represent the views of any organizations or employers I have been, am, or will be a part of.</p>
-            <p><a href="https://blog.mvxt.me" target="_blank">Visit my blog here</a>.</p>
+            <button className="button is-primary" onClick={() => visit('https://blog.mvxt.me')}>Visit blog</button>
             <hr/>
             <button className="close button">Close</button>
           </section>
@@ -210,7 +244,7 @@ export default function Other() {
             <video width="640" height="360" src="/img/noun-project-long.mp4" type="video/mp4" alt="The Noun Project" autoPlay loop muted></video>
             <p>I like experimenting and improving my skills on various different applications. Although I have no formal graphic design training, I do dabble with various Adobe products. Photoshop and Premiere are required for video and photo editing on the above projects. Another occasional side project is icon design using Adobe Illustrator.</p>
             <p>I've primarily focused my portfolio on a website called <a href="https://thenounproject.com/">The Noun Project</a>, and my icons are mostly focused on game icons.</p>
-            <p>Visit my <a href="https://thenounproject.com/orpheus_studios/">Noun Project profile</a>.</p>
+            <button className="button is-primary" onClick={() => visit('https://thenounproject.com/orpheus_studios/')}>See icons</button>
             <hr/>
             <button className="close button">Close</button>
           </section>
@@ -230,7 +264,7 @@ export default function Other() {
             <p>A while back, I took an online UI/UX course and completed the course with Springboard UX. The ultimate goal of the course was to take us through the UX journey and the various aspects of user experience design.</p>
             <p>Our final project was assembling each component of the course into one long report, and this was a complete UX report for a hypothetical product I was designing. I used a few programs for wireframing and prototyping, most notably Balsamiq and Figma.</p>
             <p>My project was titled "Muser", and it was a hypothetical new journaling app I proposed for this course.</p>
-            <p>See the <a href="https://indd.adobe.com/view/f2d39da8-6842-455f-a857-b3ad57be18db">full report here</a>.</p>
+            <button className="button is-primary" onClick={() => visit('https://indd.adobe.com/view/f2d39da8-6842-455f-a857-b3ad57be18db')}>See the report</button>
             <hr/>
             <button className="close button">Close</button>
           </section>
