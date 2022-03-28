@@ -6,13 +6,12 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Streaming', href: '/streaming' },
   { name: 'Music', href: '/music' },
   { name: 'Other Projects', href: '/other' },
-  { name: 'CV', href: '/cv' },
+  { name: 'Résumé', href: '/resume' },
   { name: 'Resources', href: '/resources' },
-  { name: 'About', href: '/about' },
   { name: 'Hire Me', href: '/hire' },
+  { name: 'Blog', href: 'https://blog.mvxt.me/' },
 ]
 
 function classNames(...classes) {

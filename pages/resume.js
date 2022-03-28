@@ -7,7 +7,7 @@ import {
   faLocationArrow
 } from '@fortawesome/free-solid-svg-icons';
 
-export default function CV() {
+export default function Resume() {
   let jobs = [
     {
       title: 'FireHydrant',
@@ -139,7 +139,7 @@ export default function CV() {
   }
 
   return (
-    <Layout title="CV">
+    <Layout title="Résumé">
       <p>
         Here is a summary of my professional (technical) experience. For more details and a complete history, visit <a href="https://www.linkedin.com/in/michaelthanh/">my LinkedIn</a> or reach out to me.
       </p>
