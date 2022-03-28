@@ -38,6 +38,10 @@ a {
   }
 }
 
+a:hover {
+  color: #64171A;
+}
+
 // Other Website Custom Styling
 @import "./navbar.scss";
 @import "./footer.scss";

@@ -42,22 +42,22 @@ export default function Footer() {
   };
 
   return (
-    <footer className="text-center lg:text-left bg-gray-50 text-gray-600">
-      <div className="text-center p-6 bg-gray-200">
-        <p>
-          {Object.keys(profiles).map(function(key) {
-            return (
-              <a key={key} className="footer-social" href={profiles[key].url}>
-                <FontAwesomeIcon icon={profiles[key].icon} size='lg' />
-              </a>
-            );
-          })}
-        </p>
-        <p className="mt-2">
-          Copyright &copy; {new Date().getFullYear()} Michael Vinh Xuan Thanh.
-          Site built with <a href="https://nextjs.org/">Next.js</a>, <a href="https://tailwindcss.com/">Tailwind CSS</a>, <a href="https://aws.amazon.com/s3/">S3</a>, and <a href="https://supabase.io/">Supabase</a>.
-        </p>
-      </div>
+    <footer className="mt-8 mb-8 text-center text-gray-600">
+      <p className="max-w-3xl px-8 mx-auto">
+        {Object.keys(profiles).map(function(key) {
+          return (
+            <a key={key} className="footer-social hover:text-primary" href={profiles[key].url}>
+              <FontAwesomeIcon icon={profiles[key].icon} size='lg' />
+            </a>
+          );
+        })}
+      </p>
+      <p className="max-w-3xl px-8 mx-auto mt-2">
+        Copyright &copy; {new Date().getFullYear()} Michael Vinh Xuan Thanh.
+      </p>
+      <p className="max-w-3xl px-8 mx-auto">
+        Site built with <a href="https://nextjs.org/">Next.js</a>, <a href="https://tailwindcss.com/">Tailwind CSS</a>, <a href="https://aws.amazon.com/s3/">S3</a>, and <a href="https://supabase.io/">Supabase</a>.
+      </p>
     </footer>
   );
 }
