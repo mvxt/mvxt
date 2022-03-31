@@ -92,14 +92,14 @@ export default function Resume() {
 
   const renderJobs = (job) => {
     return (
-      <tr>
-        <th width="25%">
-          <span className="title is-6">{job.title}</span>
+      <tr className="text-left border-b-2">
+        <th width="25%" className="align-top py-4">
+          <span className="font-base text-base">{job.title}</span>
           <br />
-          <span className="subtitle is-6 job-date">{job.date}</span>
+          <span className="font-base text-sm job-date">{job.date}</span>
         </th>
-        <td>
-          <span className="title is-6">
+        <td className="py-4">
+          <span className="font-bold">
             {job.positions[0]}
             {job.positions.map((position, index) => {
               if (index !== 0) {
@@ -116,17 +116,17 @@ export default function Resume() {
             })}
           </span>
           <br />
-          <span className="subtitle is-6 job-skills">{job.skills}</span>
+          <span className="text-sm job-skills">{job.skills}</span>
           <br /><br />
           <span>{job.description}</span>
           <br /><br />
-          <span className="subtitle is-6">
+          <span className="text-sm">
             <FontAwesomeIcon
               icon={faLocationArrow}
               className="spacer"
             />
             {job.location}
-            <span className="subtitle separator">|</span>
+            <span className="separator">|</span>
             <FontAwesomeIcon
               icon={faLink}
               className="spacer"
@@ -143,10 +143,10 @@ export default function Resume() {
       <p>
         Here is a summary of my professional (technical) experience. For more details and a complete history, visit <a href="https://www.linkedin.com/in/michaelthanh/">my LinkedIn</a> or reach out to me.
       </p>
-      <table className="table offwhite-bg">
-      <tbody>
-        {jobs.map(renderJobs)}
-      </tbody>
+      <table className="table-auto">
+        <tbody>
+          {jobs.map(renderJobs)}
+        </tbody>
       </table>
     </Layout>
   );
