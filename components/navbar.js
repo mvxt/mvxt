@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Other Projects', href: '/other' },
   { name: 'Résumé', href: '/resume' },
   { name: 'Resources', href: '/resources' },
-  { name: 'Hire Me', href: '/hire' },
+  { name: 'Services', href: '/services' },
   { name: 'Blog', href: 'https://blog.mvxt.me/' },
 ]
 
@@ -18,15 +18,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navbar(props) {
+  const { title } = props;
   const router = useRouter();
 
   return (
     <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div className="max-w-3xl sm:px-8 mx-auto">
-            <div className="relative flex items-center justify-between h-16">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative flex items-center justify-between mx-4 py-2 h-16 sm:h-fit border-b-4 border-double border-black">
+              <div className="block sm:hidden w-full px-8 mx-auto">
+                <h1 className="text-4xl font-serif text-center">{title}</h1>
+              </div>
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -48,7 +52,7 @@ export default function Example() {
                         className={classNames(
                           router.asPath === page.href ? 'text-gray-800 bg-gray-200'
                             : 'text-gray-600',
-                              'inline-flex items-center hover:bg-primary hover:text-white no-underline text-center px-3 py-2 rounded-md text-sm font-medium'
+                              'inline-flex items-center hover:bg-primary hover:text-white no-underline text-center px-3 py-2 rounded-md text-base font-medium'
                         )}
                         aria-current={router.asPath === page.href ? 'page' : undefined}
                       >
@@ -71,7 +75,7 @@ export default function Example() {
                   className={classNames(
                     router.asPath === page.href ? 'text-gray-800 bg-gray-200 hover:bg-primary hover:text-white no-underline'
                       : 'text-gray-600 hover:bg-primary hover:text-white no-underline',
-                        'block px-3 py-2 rounded-md text-sm font-medium'
+                        'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={router.asPath === page.href ? 'page' : undefined}
                 >

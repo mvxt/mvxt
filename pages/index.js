@@ -9,7 +9,7 @@ export default function Index() {
         <li><b>View my current projects</b> by using the navigation menu above.</li>
         <li><b>For my technical work history</b>, visit <a href="/resume">my résumé</a>.</li>
         <li><b>Free downloads and resources</b> are <a href="/resources">available here</a>.</li>
-        <li><b>If you need help with your résumé</b>, read about my services on the <a href="/hire">Hiring page</a>.</li><br/>
+        <li><b>If you need help with your résumé</b>, read about what I provide on the <a href="/services">Services page</a>.</li><br/>
         <li><b>Finally, to contact me</b>, reach me at michael(DOT)thanh(AT)mvxt.me or via one of my social profiles in the footer.</li>
       </ul><br/>
       <p>Thanks for stopping by.</p>

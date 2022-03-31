@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import Footer from './footer';
+import Header from './header';
 import Navbar from './navbar';
 
 export default function Layout({ children, ...props }) {
@@ -12,7 +13,8 @@ export default function Layout({ children, ...props }) {
       <title>{tabTitle ? tabTitle : title} - Michael Vinh Xuan Thanh</title>
     </Head>
     <div className="columns-1">
-      <Navbar/>
+      <Header title={title} />
+      <Navbar title={title} />
       <div className="max-w-3xl px-8 mx-auto">
         <article className="article">
           <section className="">
