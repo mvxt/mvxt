@@ -92,7 +92,7 @@ export default function Resume() {
 
   const renderJobs = (job) => {
     return (
-      <tr className="text-left border-b-2">
+      <tr key={job.name} className="text-left border-b-2">
         <th width="25%" className="align-top py-4">
           <span className="font-base text-base">{job.title}</span>
           <br />
