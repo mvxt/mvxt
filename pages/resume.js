@@ -17,7 +17,7 @@ export default function Resume() {
         'Sr. Solutions Engineer (2022)',
       ],
       skills: 'Sales, DevOps, Observability/Monitoring Tools, Incident Management, Terraform, JavaScript',
-      description: 'FireHydrant is the reliability platform for every developer. We provide a cohesive platform that ties together all your integrations automates your incident management process because we envision a world where all software is reliable.',
+      description: 'FireHydrant is the reliability platform for every developer. We provide a cohesive platform that ties together all your integrations and automates your incident management process because we envision a world where all software is reliable.',
       location: 'Denver, CO',
       href: 'https://firehydrant.io/'
     },
