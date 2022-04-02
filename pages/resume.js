@@ -1,3 +1,4 @@
+import React from 'react';
 import Layout from '../components/layout';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -92,7 +93,7 @@ export default function Resume() {
 
   const renderJobs = (job) => {
     return (
-      <tr key={job.name} className="text-left border-b-2">
+      <tr key={job.title} className="text-left border-b-2">
         <th width="25%" className="align-top py-4">
           <span className="font-base text-base">{job.title}</span>
           <br />
@@ -104,13 +105,13 @@ export default function Resume() {
             {job.positions.map((position, index) => {
               if (index !== 0) {
                 return (
-                  <>
+                  <React.Fragment key={position}>
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       style={{ margin: "0 5px" }}
                     />
                     {position}
-                  </>
+                  </React.Fragment>
                 );
               }
             })}
