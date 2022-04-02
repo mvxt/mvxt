@@ -4,6 +4,8 @@ import Footer from './footer';
 import Header from './header';
 import Navbar from './navbar';
 
+typeof window !== 'undefined' && import('tw-elements');
+
 export default function Layout({ children, ...props }) {
   const { tabTitle, title } = props;
 
