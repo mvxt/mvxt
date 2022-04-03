@@ -36,10 +36,10 @@ export default function Downloads() {
   const categories = [
     { title: 'All', key: 'all' },
     { title: 'Word Docs', key: 'word' },
-    { title: 'Slide Decs', key: 'ppt' },
+    { title: 'Slide Decks', key: 'ppt' },
     { title: 'eBooks', key: 'ebook' },
     { title: 'Music', key: 'music' },
-    { title: 'Links', key: 'links' }
+    { title: 'Links', key: 'link' }
   ];
 
   const displayItem = (item) => {
