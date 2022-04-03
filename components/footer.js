@@ -43,7 +43,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-8 mb-8 text-center text-gray-600">
-      <p className="max-w-3xl px-8 mx-auto">
+      <p className="max-w-3xl px-8 py-4 mx-auto border-t border-gray-200">
         {Object.keys(profiles).map(function(key) {
           return (
             <a key={key} className="footer-social hover:text-primary" href={profiles[key].url}>
