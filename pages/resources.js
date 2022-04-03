@@ -64,7 +64,7 @@ export default function Downloads() {
 
     return (
       <a
-        className="block px-4 py-2 border-b border-gray-200 w-full rounded-t-lg cursor-pointer no-underline"
+        className="block px-4 py-2 border-b border-gray-200 w-full rounded-t-lg cursor-pointer no-underline hover:bg-gray-100"
         href={item.link}
         key={item.name}
         target="_blank"
@@ -87,7 +87,7 @@ export default function Downloads() {
       <button
         type="button"
         onClick={setActive(category.key)}
-        className={(currentTab.toLowerCase() === category.key ? 'bg-primary text-white' : 'hover:bg-gray-200 text-primary') + ' rounded-l px-6 py-2 border-2 border-primary font-medium text-xs leading-tight focus:outline-none focus:ring-0 transition duration-50 ease-in-out'}
+        className={(currentTab.toLowerCase() === category.key ? 'bg-primary text-white' : 'hover:bg-gray-100 text-primary') + ' rounded-l px-6 py-2 border-2 border-primary font-medium text-xs leading-tight focus:outline-none focus:ring-0 transition duration-50 ease-in-out'}
       >
         {category.title}
       </button>

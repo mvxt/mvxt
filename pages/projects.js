@@ -53,21 +53,19 @@ export default function Other() {
       status: 1,
       content: (
         <>
-          <p>
-            <figure className="w-full">
-              <iframe
-                width="720"
-                height="405"
-                src="https://www.youtube.com/embed/Ggr2BSF8bLA"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen={true}
-                className="w-full"
-              >
-              </iframe>
-            </figure>
-          </p>
+          <figure className="w-full pt-1 mb-2">
+            <iframe
+              width="720"
+              height="405"
+              src="https://www.youtube.com/embed/Ggr2BSF8bLA"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen={true}
+              className="w-full"
+            >
+            </iframe>
+          </figure>
           <p>The Static Void Academy is a project I'm working on for software education. I'm experimenting with an idea to make software lessons and concepts more digestible and democratizing the process of teaching.</p>
           <p className="text-gray-600">{printLinks(staticVoidAcademyLinks)}</p>
         </>
@@ -175,7 +173,7 @@ export default function Other() {
     return (
       <Fragment key={project.key}>
         <button
-          className="w-1/3"
+          className="w-1/3 p-2 hover:border hover:border-gray-200 hover:shadow-lg"
           data-bs-toggle="modal"
           data-bs-target={"#modal" + project.key}
         >
@@ -287,7 +285,7 @@ export default function Other() {
                   className="px-6 py-2.5 mr-2 font-medium border-2 border-gray-300
                     text-xs text-white bg-primary leading-tight rounded shadow-md 
                     hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0
-                    transition duration-150 ease-in-out
+                    transition duration-150 ease-in-out hover:bg-red-800
                   "
                   data-bs-dismiss="modal"
                 >

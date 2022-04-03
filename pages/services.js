@@ -166,7 +166,7 @@ export default function Hire() {
           </p>
           <p className="text-center">
             <button
-              className="rounded-full px-6 py-3 text-white bg-primary"
+              className="rounded-full px-6 py-3 text-white bg-primary hover:bg-red-800"
               onClick={(e) => {
                 window.open('https://vinnythen00b.gumroad.com/l/resume-review');
               }}
