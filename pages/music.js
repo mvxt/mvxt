@@ -57,7 +57,7 @@ export default function Music() {
       <br />
       <p>Alongside symphonic and marching bands, I played in a separate amateur band with some friends in high school. I took charge of production and editing, and we had the opportunity to perform live at shows and venues like <a href="https://www.thorntonco.gov/festivals-events/Pages/thorntonfest.aspx">Thorntonfest</a>, <a href="https://www.broomfieldenterprise.com/2016/02/15/broomstock-music-event-ending-after-15-years/">Broomstock</a>, and <a href="https://www.theorientaltheater.com/">The Oriental Theater</a>.</p>
       <p>My more experimental music is under my solo project <a href="https://soundcloud.com/vinnythen00b">VinnyTheN00b</a> while I make slightly more mainstream music with a friend under <a href="https://soundcloud.com/heartbeat-retro">Heartbeat Retrospective</a>. We'll be releasing an album soon, stay tuned!</p>
-      <p>{printLinks(heartbeatLinks)}</p>
+      <p className="text-gray-600">{printLinks(heartbeatLinks)}</p>
     </Layout>
   );
 };
