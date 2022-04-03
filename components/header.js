@@ -1,16 +1,9 @@
-export default function Header() {
+export default function Header(props) {
+  const { title } = props;
+
   return (
-    <section className="hero has-text-centered">
-      <div id="hero-override" className="hero-body">
-        <div className="container">
-          <h1 className="title">
-            Michael Vinh Xuan Thanh
-          </h1>
-          <h2 className="subtitle">
-            Solutions Engineer. Software Developer. Musician.
-          </h2>
-        </div>
-      </div>
-    </section>
+    <div className="hidden sm:block max-w-3xl px-8 pt-4 mx-auto">
+      <h1 className="text-4xl font-serif text-center">{title}</h1>
+    </div>
   );
 }

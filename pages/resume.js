@@ -1,3 +1,4 @@
+import React from 'react';
 import Layout from '../components/layout';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +8,7 @@ import {
   faLocationArrow
 } from '@fortawesome/free-solid-svg-icons';
 
-export default function CV() {
+export default function Resume() {
   let jobs = [
     {
       title: 'FireHydrant',
@@ -16,7 +17,7 @@ export default function CV() {
         'Sr. Solutions Engineer (2022)',
       ],
       skills: 'Sales, DevOps, Observability/Monitoring Tools, Incident Management, Terraform, JavaScript',
-      description: 'FireHydrant is the reliability platform for every developer. We provide a cohesive platform that ties together all your integrations automates your incident management process because we envision a world where all software is reliable.',
+      description: 'FireHydrant is the reliability platform for every developer. We provide a cohesive platform that ties together all your integrations and automates your incident management process because we envision a world where all software is reliable.',
       location: 'Denver, CO',
       href: 'https://firehydrant.io/'
     },
@@ -92,41 +93,41 @@ export default function CV() {
 
   const renderJobs = (job) => {
     return (
-      <tr>
-        <th width="25%">
-          <span className="title is-6">{job.title}</span>
+      <tr key={job.title} className="text-left border-b-2">
+        <th width="25%" className="align-top py-4">
+          <span className="font-base text-base">{job.title}</span>
           <br />
-          <span className="subtitle is-6 job-date">{job.date}</span>
+          <span className="font-base text-sm job-date">{job.date}</span>
         </th>
-        <td>
-          <span className="title is-6">
+        <td className="py-4">
+          <span className="font-bold">
             {job.positions[0]}
             {job.positions.map((position, index) => {
               if (index !== 0) {
                 return (
-                  <>
+                  <React.Fragment key={position}>
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       style={{ margin: "0 5px" }}
                     />
                     {position}
-                  </>
+                  </React.Fragment>
                 );
               }
             })}
           </span>
           <br />
-          <span className="subtitle is-6 job-skills">{job.skills}</span>
+          <span className="text-sm job-skills">{job.skills}</span>
           <br /><br />
           <span>{job.description}</span>
           <br /><br />
-          <span className="subtitle is-6">
+          <span className="text-sm">
             <FontAwesomeIcon
               icon={faLocationArrow}
               className="spacer"
             />
             {job.location}
-            <span className="subtitle separator">|</span>
+            <span className="separator">|</span>
             <FontAwesomeIcon
               icon={faLink}
               className="spacer"
@@ -139,14 +140,14 @@ export default function CV() {
   }
 
   return (
-    <Layout title="CV">
+    <Layout title="Résumé">
       <p>
         Here is a summary of my professional (technical) experience. For more details and a complete history, visit <a href="https://www.linkedin.com/in/michaelthanh/">my LinkedIn</a> or reach out to me.
       </p>
-      <table className="table offwhite-bg">
-      <tbody>
-        {jobs.map(renderJobs)}
-      </tbody>
+      <table className="table-auto">
+        <tbody>
+          {jobs.map(renderJobs)}
+        </tbody>
       </table>
     </Layout>
   );

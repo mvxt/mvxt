@@ -45,6 +45,7 @@ export default function Music() {
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/746874703&color=%23583e36&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
       </iframe>
+      <br/>
       <iframe
         width="100%"
         height="300"
@@ -56,7 +57,7 @@ export default function Music() {
       <br />
       <p>Alongside symphonic and marching bands, I played in a separate amateur band with some friends in high school. I took charge of production and editing, and we had the opportunity to perform live at shows and venues like <a href="https://www.thorntonco.gov/festivals-events/Pages/thorntonfest.aspx">Thorntonfest</a>, <a href="https://www.broomfieldenterprise.com/2016/02/15/broomstock-music-event-ending-after-15-years/">Broomstock</a>, and <a href="https://www.theorientaltheater.com/">The Oriental Theater</a>.</p>
       <p>My more experimental music is under my solo project <a href="https://soundcloud.com/vinnythen00b">VinnyTheN00b</a> while I make slightly more mainstream music with a friend under <a href="https://soundcloud.com/heartbeat-retro">Heartbeat Retrospective</a>. We'll be releasing an album soon, stay tuned!</p>
-      <p>{printLinks(heartbeatLinks)}</p>
+      <p className="text-gray-600">{printLinks(heartbeatLinks)}</p>
     </Layout>
   );
 };
