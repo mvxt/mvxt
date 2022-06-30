@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react';
+import PropagateLoader from 'react-spinners/PropagateLoader';
+
 import Layout from '../components/layout';
 import printLinks from '../utils/printLinks';
 
@@ -5,14 +8,26 @@ import {
   faBandcamp,
   faFacebook,
   faSoundcloud,
+  faSpotify,
   faYoutube
 } from '@fortawesome/free-brands-svg-icons';
 import {
+  faMusic,
   faStar
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function Music() {
+  let [loading, setLoading] = useState(true);
+
   let heartbeatLinks = {
+    'apple music': {
+      icon: faMusic,
+      url: 'https://music.apple.com/us/artist/heartbeat-retrospective/1617771105'
+    },
+    'spotify': {
+      icon: faSpotify,
+      url: 'https://open.spotify.com/artist/2OZ6CBLUupZ4s25l5P8Jt2?si=GEz2kcodTluea4FMz6Cybw&nd=1'
+    },
     'soundcloud': {
       icon: faSoundcloud,
       url: 'https://soundcloud.com/heartbeat-retro'
@@ -31,32 +46,40 @@ export default function Music() {
     },
     'youtube': {
       icon: faYoutube,
-      url: 'https://www.youtube.com/channel/UCjaVYkoqMOANGAONj_L4ZuA'
+      url: 'https://music.youtube.com/playlist?list=OLAK5uy_l5palaI9yK4sUWJOalprQ8vlttdUM66CQ'
     }
   };
 
+  useEffect(() => {
+    setLoading(false);
+  });
+
   return (
     <Layout title="Music">
+      {loading ? <PropagateLoader /> :
+        (
+          <iframe
+            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+            frameBorder="0"
+            height="450"
+            style={{ width: "100%", overflow: "hidden", background: "transparent" }}
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+            src="https://embed.music.apple.com/us/album/heart-ep/1618007179">
+          </iframe>
+        )
+      }
+      <br />
       <iframe
+        style={{ borderRadius: "12px" }}
+        src="https://open.spotify.com/embed/artist/2OZ6CBLUupZ4s25l5P8Jt2?utm_source=generator"
         width="100%"
-        height="300"
-        scrolling="no"
-        frameBorder="no"
-        allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/746874703&color=%23583e36&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-      </iframe>
-      <br/>
-      <iframe
-        width="100%"
-        height="300"
-        scrolling="no"
-        frameBorder="no"
-        allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/782653507&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        height="250"
+        frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
       </iframe>
       <br />
       <p>Alongside symphonic and marching bands, I played in a separate amateur band with some friends in high school. I took charge of production and editing, and we had the opportunity to perform live at shows and venues like <a href="https://www.thorntonco.gov/festivals-events/Pages/thorntonfest.aspx">Thorntonfest</a>, <a href="https://www.broomfieldenterprise.com/2016/02/15/broomstock-music-event-ending-after-15-years/">Broomstock</a>, and <a href="https://www.theorientaltheater.com/">The Oriental Theater</a>.</p>
-      <p>My more experimental music is under my solo project <a href="https://soundcloud.com/vinnythen00b">VinnyTheN00b</a> while I make slightly more mainstream music with a friend under <a href="https://soundcloud.com/heartbeat-retro">Heartbeat Retrospective</a>. We'll be releasing an album soon, stay tuned!</p>
+      <p>My more experimental music is under a solo project <a href="https://soundcloud.com/vinnythen00b">VinnyTheN00b</a> while I make slightly more mainstream music with a friend under Heartbeat Retrospective.</p>
       <p className="text-gray-600">{printLinks(heartbeatLinks)}</p>
     </Layout>
   );
