@@ -15,6 +15,7 @@ export default function Resume() {
       date: 'Feb 2022 - Current',
       positions: [
         'Sr. Solutions Engineer (2022)',
+        'Lead Solutions Engineer (2023)'
       ],
       skills: 'Sales, DevOps, Observability/Monitoring Tools, Incident Management, Terraform, JavaScript',
       description: 'FireHydrant is the reliability platform for every developer. We provide a cohesive platform that ties together all your integrations and automates your incident management process because we envision a world where all software is reliable.',
@@ -93,7 +94,7 @@ export default function Resume() {
 
   const renderJobs = (job) => {
     return (
-      <tr key={job.title} className="text-left border-b-2">
+      <tr key={job.title} className="text-left border-b-2 last:border-b-0">
         <th width="25%" className="align-top py-4">
           <span className="font-base text-base">{job.title}</span>
           <br />

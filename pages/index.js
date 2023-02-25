@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <Layout title="Home">
       <p>Hi, I'm Michael. My coworkers call me Vinny.</p>
-      <p>Currently a Sr. Solutions Engineer at <a href="https://firehydrant.io/">FireHydrant</a>. I work in technical sales, make music, write, and develop stuff.</p>
+      <p>Currently a Lead Solutions Engineer at <a href="https://firehydrant.io/">FireHydrant</a>. I work in technical sales, make music, write, and develop stuff.</p>
       <ul className="list-disc pl-8">
         <li><b>View my current projects</b> by using the navigation menu above.</li>
         <li><b>For my technical work history</b>, visit <a href="/resume">my résumé</a>.</li>
