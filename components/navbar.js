@@ -7,10 +7,8 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Music', href: '/music' },
-  { name: 'Projects', href: '/projects' },
+  { name: 'Past Projects', href: '/projects' },
   { name: 'Résumé', href: '/resume' },
-  { name: 'Resources', href: '/resources' },
-  { name: 'Services', href: '/services' },
   { name: 'Blog', href: 'https://blog.mvxt.me/' },
 ]
 

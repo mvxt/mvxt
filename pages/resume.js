@@ -12,15 +12,15 @@ export default function Resume() {
   let jobs = [
     {
       title: 'FireHydrant',
-      date: 'Feb 2022 - Current',
+      date: 'Feb 2022 - Present',
       positions: [
         'Sr. Solutions Engineer (2022)',
         'Lead Solutions Engineer (2023)'
       ],
       skills: 'Sales, DevOps, Observability/Monitoring Tools, Incident Management, Terraform, JavaScript',
-      description: 'FireHydrant is the reliability platform for every developer. We provide a cohesive platform that ties together all your integrations and automates your incident management process because we envision a world where all software is reliable.',
+      description: 'FireHydrant is an alerting and incident management platform that streamlines incident response. We provide a cohesive platform that ties together all your integrations and reduces stress from ring to retro.',
       location: 'Denver, CO',
-      href: 'https://firehydrant.io/'
+      href: 'https://firehydrant.com/'
     },
     {
       title: 'Twilio',
