@@ -66,7 +66,8 @@ export default function Other() {
             >
             </iframe>
           </figure>
-          <p>The Static Void Academy is a project I'm working on for software education. I'm experimenting with an idea to make software lessons and concepts more digestible and democratizing the process of teaching.</p>
+          <p>The Static Void Academy was a project around software education. I built an application and started a YouTube channel dcovering various aspects of software development aimed at beginners.</p>
+          <p>This project has largely stalled and I am not considering revisiting this in the near future.</p>
           <p className="text-gray-600">{printLinks(staticVoidAcademyLinks)}</p>
         </>
       ),
@@ -81,8 +82,8 @@ export default function Other() {
       content: (
         <>
           <p><img src="/img/mm-long.gif" alt="Music Mesh" className="w-full text-center" /></p>
-          <p>When we were young, there was an awesome project by Batuhan Bozkurt (a.k.a. Earslap) called Otomata. It's basically a grid with moving arrows that played notes when they hit the edges.</p>
-          <p>That project was actually a substantial influence for me getting into music production, as I would construct elaborate grids on Otomata and then write down the random melodies that played.</p>
+          <p>A couple decades ago, there was a Flash application called Otomata by Batuhan Bozkurt (a.k.a. Earslap). It's basically a grid with moving arrows that played notes when they hit the edges.</p>
+          <p>That project substantially influenced me getting into music production; I would construct elaborate grids on Otomata and use the resulting melodies as composition inspiration.</p>
           <p>Since then, the project has largely gone unmaintained. I partnered together with a friend to reconstruct the same idea, but accessible via JavaScript and the browser (as opposed to Flash).</p>
         </>
       ),
@@ -97,8 +98,8 @@ export default function Other() {
       content: (
         <>
           <p className="image"><img src="/img/medium-long.jpg" alt="Medium Profile" /></p>
-          <p>I write periodically on Medium about a variety of topics, and I've contributed to several different publications like <a href="https://medium.com/better-programming">Better Programming</a>, <a href="https://medium.com/swlh">The Startup</a>, <a href="https://medium.com/mind-cafe">Mind Cafe</a>, and <a href="https://psiloveyou.xyz/">P.S. I Love You</a> among others. I've also been featured as a Top Writer in Technology, Productivity, and Self Improvement.</p>
-          <p>The views expressed on these articles are my own, and they do not represent the views of any organizations or employers I have been, am, or will be a part of.</p>
+          <p>I used to write periodically on Medium about a variety of topics, and I've contributed to several different publications like <a href="https://medium.com/better-programming">Better Programming</a>, <a href="https://medium.com/swlh">The Startup</a>, <a href="https://medium.com/mind-cafe">Mind Cafe</a>, and <a href="https://psiloveyou.xyz/">P.S. I Love You</a> among others. I've also been featured at one point as a Top Writer in Technology, Productivity, and Self Improvement.</p>
+          <p>I haven't contributed consistently for the past couple of years but may return to writing at some point.</p>
         </>
       ),
       visit: 'https://blog.mvxt.me'
@@ -112,9 +113,8 @@ export default function Other() {
       content: (
         <>
           <p className="image"><img src="/img/aotm-long.png" alt="App of the Month" /></p>
-          <p>App of the Month is a monthly newsletter reviewing the best productivity and self-improvement apps for others looking to improve their lives.</p>
-          <p>Years of experimenting and trying out different tools has given me a wealth of information about them.</p>
-          <p>You can subscribe below or by visiting the project! I don't spam or resell email addresses.</p>
+          <p>App of the Month was a monthly newsletter reviewing the best productivity and self-improvement apps for others looking to improve their lives. Years of experimenting and trying out different tools has given me a wealth of information about them.</p>
+          <p>I've not contributed any new articles or posts in a while but am considering revisiting this in the future. You can subscribe below or by visiting the project. I don't spam or resell email addresses.</p>
           <iframe src="https://monthlyapp.substack.com/embed" width="480" height="320" style={{ border:"1px solid #EEE", background:"white", frameborder: 0, scrolling:"no", margin: "0 auto", display: "block" }}></iframe>
         </>
       ),
@@ -141,8 +141,8 @@ export default function Other() {
               className="w-full"
             />
           </p>
-          <p>I like experimenting and improving my skills on various different applications. Although I have no formal graphic design training, I do dabble with various Adobe products. Photoshop and Premiere are required for video and photo editing on the above projects. Another occasional side project is icon design using Adobe Illustrator.</p>
-          <p>I've primarily focused my portfolio on a website called <a href="https://thenounproject.com/">The Noun Project</a>, and my icons are mostly focused on game icons.</p>
+          <p>For side projects, I do a lot of work with Adobe Photoshop, Adobe Illustrator, and Adobe Premiere. For a while, I created miscellaneous icons to improve my skill with Illustrator for vector graphics.</p>
+          <p>Most of my portfolio is on a website called <a href="https://thenounproject.com/creator/mvxt/">The Noun Project</a>, and my icons are mostly focused on games as a theme.</p>
         </>
       ),
       visit: 'https://thenounproject.com/mvxt/'
@@ -311,7 +311,7 @@ export default function Other() {
   };
 
   return (
-    <Layout tabTitle="Projects" title="Projects">
+    <Layout tabTitle="Past Projects" title="Past Projects">
       <section className="container flex flex-wrap py-2 mx-auto">
         {projects.sort((a, b) => {
           return a.status - b.status;
