@@ -1,33 +1,54 @@
+@charset "utf-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import url('https://fonts.googleapis.com/css?family=Exo');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.article {
+  padding-top: 0.5rem;
+  flex-shrink: 2;
+  p {
+    margin-bottom: 20px;
+    a {
+      text-decoration: underline;
+    }
+  }
+  li {
+    a {
+      text-decoration: underline;
+    }
+  }
+  h2 {
+    margin-bottom: 20px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+section {
+  p:first-of-type {
+    padding-top: 10px;
   }
 }
+
+a {
+  text-decoration: underline;
+  &.footer-social:not(:first-of-type) {
+    margin-left: 10px;
+  }
+}
+
+a:hover {
+  color: #64171A;
+}
+
+.custom-footer {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  align-self: flex-end;
+}
+
+.footer-icons {
+  margin-bottom: 10px;
+}
+
