@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Michael Vinh Xuan Thanh
 
-## Getting Started
+Hi there, I'm Michael. 👋
+My coworkers and audience call me Vinny.
 
-First, run the development server:
+I'm a Lead Solutions Engineer by day, software engineer and musician by night.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I've largely paused working on most of my side projects to focus on other things. I still [write occasionally](http://blog.mvxt.me/) though about coding, productivity, and career, among other topics.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Stuff I've done in the past:
+- [VinnyTheN00b](https://www.twitch.tv/vinnythen00b) - Streaming games, music production, and coding.
+- [The Static Void Academy](https://www.staticvoidacademy.com/) - Online website for people to learn coding.
+- [App of the Month](https://monthlyapp.substack.com/) - Monthly newsletter where I recommend and review productivity/business apps.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+For more information about me, such as social media and professional work history, visit my main website linked on the left.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Thanks for stopping by!**
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
