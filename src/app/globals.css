@@ -52,3 +52,36 @@ a:hover {
   margin-bottom: 10px;
 }
 
+nav.navbar {
+  border: solid #333;
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 3px;
+  border-left-width: 0px;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar-center {
+    display:flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: row;
+  }
+  .navbar-link,.navbar-item {
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+  .navbar-dropdown .navbar-item {
+   justify-content:left;
+  }
+}
+
