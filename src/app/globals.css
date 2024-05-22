@@ -85,3 +85,16 @@ nav.navbar {
   }
 }
 
+.job-date,.job-skills {
+  font-style: italic;
+}
+
+.spacer {
+  margin-right: 5px;
+}
+
+.separator {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
