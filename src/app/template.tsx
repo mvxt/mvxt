@@ -28,7 +28,7 @@ export default function Template({
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Music', href: '/music' },
-    { name: 'Past Projects', href: '/projects' },
+    { name: 'Past Projects', href: '/past-projects' },
     { name: 'Résumé', href: '/resume' },
     { name: 'Blog', href: 'https://blog.mvxt.me/' },
   ];
