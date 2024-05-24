@@ -1,6 +1,5 @@
 'use client'
-import { Fragment, useEffect, useState } from 'react';
-import PropagateLoader from 'react-spinners/PropagateLoader';
+import { Fragment } from 'react';
 
 import type { Metadata } from 'next';
 
@@ -20,7 +19,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function Music() {
-  let [loading, setLoading] = useState(true);
 
   const heartbeatLinks = {
     'apple music': {
@@ -52,10 +50,6 @@ export default function Music() {
       url: 'https://music.youtube.com/playlist?list=OLAK5uy_l5palaI9yK4sUWJOalprQ8vlttdUM66CQ'
     }
   };
-
-  useEffect(() => {
-    setLoading(false);
-  });
 
   return (
     <Fragment>
