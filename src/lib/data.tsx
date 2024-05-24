@@ -40,7 +40,7 @@ const staticVoidAcademyLinks = {
 }
 
 
-const projects = { 
+export const projects = {
   sva: {
     title: 'Static Void Academy',
     subtitle: 'Online Code Academy',
@@ -155,7 +155,3 @@ const projects = {
   }
 };
 
-module.exports = {
-  projects: projects,
-  staticVoidAcademyLinks: staticVoidAcademyLinks,
-}

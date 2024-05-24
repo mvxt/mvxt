@@ -14,8 +14,12 @@ import {
 
 import { projects } from '@/lib/data';
 
-export default function MyModal() {
-  let [isOpen, setIsOpen] = useState({
+interface IsOpenObject {
+  [key: string]: boolean,
+}
+
+export default function PastProjects() {
+  let [isOpen, setIsOpen] = useState<IsOpenObject>({
     sva: false,
     mm: false,
     medium: false,
@@ -24,7 +28,7 @@ export default function MyModal() {
     muser: false
   });
 
-  function open(key) {
+  function open(key: string) {
     let { [key]: _, ...rest } = isOpen;
     rest[key] = true;
     setIsOpen(rest);
@@ -41,7 +45,7 @@ export default function MyModal() {
     });
   }
 
-  const renderProject = (key) => {
+  const renderProject = (key: string) => {
     return (
       <Fragment key={key}>
         <Button
