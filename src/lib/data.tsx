@@ -75,8 +75,8 @@ const projects = {
     status: 0,
     content: (
       <>
-        <p><img src="/img/mm-long.gif" alt="Music Mesh" className="w-full text-center" /></p>
-        <p>A couple decades ago, there was a Flash application called Otomata by Batuhan Bozkurt (a.k.a. Earslap). It's basically a grid with moving arrows that played notes when they hit the edges.</p>
+        <p><picture><img src="/img/mm-long.gif" alt="Music Mesh" className="w-full text-center" /></picture></p>
+        <p>{"A couple decades ago, there was a Flash application called Otomata by Batuhan Bozkurt (a.k.a. Earslap). It's basically a grid with moving arrows that played notes when they hit the edges."}</p>
         <p>That project substantially influenced me getting into music production; I would construct elaborate grids on Otomata and use the resulting melodies as composition inspiration.</p>
         <p>Since then, the project has largely gone unmaintained. I partnered together with a friend to reconstruct the same idea, but accessible via JavaScript and the browser (as opposed to Flash).</p>
       </>
@@ -90,9 +90,9 @@ const projects = {
     status: 0,
     content: (
       <>
-        <p className="image"><img src="/img/medium-long.jpg" alt="Medium Profile" /></p>
-        <p>I used to write periodically on Medium about a variety of topics, and I've contributed to several different publications like <a href="https://medium.com/better-programming">Better Programming</a>, <a href="https://medium.com/swlh">The Startup</a>, <a href="https://medium.com/mind-cafe">Mind Cafe</a>, and <a href="https://psiloveyou.xyz/">P.S. I Love You</a> among others. I've also been featured at one point as a Top Writer in Technology, Productivity, and Self Improvement.</p>
-        <p>I haven't contributed consistently for the past couple of years but may return to writing at some point.</p>
+        <p className="image"><picture><img src="/img/medium-long.jpg" alt="Medium Profile" /></picture></p>
+        <p>{"I used to write periodically on Medium about a variety of topics, and I've contributed to several different publications like "}<a href="https://medium.com/better-programming">Better Programming</a>, <a href="https://medium.com/swlh">The Startup</a>, <a href="https://medium.com/mind-cafe">Mind Cafe</a>, and <a href="https://psiloveyou.xyz/">P.S. I Love You</a>{", among others. I've also been featured at one point as a Top Writer in Technology, Productivity, and Self Improvement."}</p>
+        <p>{"I haven't contributed consistently for the past couple of years but may return to writing at some point."}</p>
       </>
     ),
     visit: 'https://blog.mvxt.me'
@@ -104,9 +104,9 @@ const projects = {
     status: 1,
     content: (
       <>
-        <p className="image"><img src="/img/aotm-long.png" alt="App of the Month" /></p>
+        <p className="image"><picture><img src="/img/aotm-long.png" alt="App of the Month" /></picture></p>
         <p>App of the Month was a monthly newsletter reviewing the best productivity and self-improvement apps for others looking to improve their lives. Years of experimenting and trying out different tools has given me a wealth of information about them.</p>
-        <p>I've not contributed any new articles or posts in a while but am considering revisiting this in the future. You can subscribe below or by visiting the project. I don't spam or resell email addresses.</p>
+        <p>{"I've not contributed any new articles or posts in a while but am considering revisiting this in the future. You can subscribe below or by visiting the project. I don't spam or resell email addresses."}</p>
         <iframe src="https://monthlyapp.substack.com/embed" width="480" height="320" style={{ border:"1px solid #EEE", background:"white", frameborder: 0, scrolling:"no", margin: "0 auto", display: "block" }}></iframe>
       </>
     ),
@@ -145,10 +145,10 @@ const projects = {
     status: 2,
     content: (
       <>
-        <p><img src="/img/muser-long.jpg" alt="The Muser Project" className="w-full" /></p>
+        <p><picture><img src="/img/muser-long.jpg" alt="The Muser Project" className="w-full" /></picture></p>
         <p>A while back, I took an online UI/UX course and completed the course with Springboard UX. The ultimate goal of the course was to take us through the UX journey and the various aspects of user experience design.</p>
         <p>Our final project was assembling each component of the course into one long report, and this was a complete UX report for a hypothetical product I was designing. I used a few programs for wireframing and prototyping, most notably Balsamiq and Figma.</p>
-        <p>My project was titled "Muser", and it was a hypothetical new journaling app I proposed for this course.</p>
+        <p>{"My project was titled 'Muser', and it was a hypothetical new journaling app I proposed for this course."}</p>
       </>
     ),
     visit: 'https://indd.adobe.com/view/f2d39da8-6842-455f-a857-b3ad57be18db'

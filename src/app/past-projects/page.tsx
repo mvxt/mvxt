@@ -48,11 +48,13 @@ export default function MyModal() {
           onClick={() => open(key)}
           className="w-1/3 p-2 hover:border hover:border-gray-200 hover:shadow-lg"
         >
-          <img
-            alt="gallery"
-            className="object-center p-2 rounded-lg"
-            src={projects[key].thumb}
-          />
+          <picture>
+            <img
+              alt="gallery"
+              className="object-center p-2 rounded-lg"
+              src={projects[key].thumb}
+            />
+          </picture>
         </Button>
         <Transition appear show={isOpen[key]}>
           <Dialog as="div" className="relative z-10 focus:outline-none w-full h-full fade" onClose={close}>

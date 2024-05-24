@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Fragment>
       <p><b>404 Not Found</b></p>
-      <p>The page you're looking for doesn't exist. If this is a mistake, please reach out and let me know.</p>
+      <p>{"The page you're looking for doesn't exist. If this is a mistake, please reach out and let me know."}</p>
     </Fragment>
   );
 }
