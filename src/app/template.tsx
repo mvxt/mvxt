@@ -128,7 +128,7 @@ export default function Template({
       </Disclosure>
       <div className="max-w-3xl px-8 mx-auto">
         <article className="article">
-          <section className="">
+          <section className="container flex flex-wrap py-2">
             {children}
           </section>
         </article>
