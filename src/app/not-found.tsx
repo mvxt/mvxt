@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 
 import type { Metadata } from "next";
-import { Head } from 'next/head';
+import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: "404 - Michael Vinh Xuan Thanh",
