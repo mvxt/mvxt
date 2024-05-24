@@ -127,10 +127,8 @@ export default function Template({
         )}
       </Disclosure>
       <div className="max-w-3xl px-8 mx-auto">
-        <article className="article">
-          <section className="container flex flex-wrap py-2">
-            {children}
-          </section>
+        <article className="article container py-2">
+          {children}
         </article>
       </div>
       <footer className="mt-8 mb-8 text-center text-gray-600custom-footer">

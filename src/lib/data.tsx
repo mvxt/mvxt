@@ -61,7 +61,7 @@ const projects = {
           >
           </iframe>
         </figure>
-        <p>The Static Void Academy was a project around software education. I built an application and started a YouTube channel dcovering various aspects of software development aimed at beginners.</p>
+        <p>The Static Void Academy was a project around software education. I built an application and started a YouTube channel covering various aspects of software development aimed at beginners.</p>
         <p>This project has largely stalled and I am not considering revisiting this in the near future.</p>
         <p className="text-gray-600">{printLinks(staticVoidAcademyLinks)}</p>
       </>

@@ -7,26 +7,14 @@
 
 .article {
   padding-top: 0.5rem;
-  flex-shrink: 2;
-  p {
-    margin-bottom: 20px;
-    a {
-      text-decoration: underline;
-    }
-  }
-  li {
+  p, ul {
+    margin: 15px 0;
     a {
       text-decoration: underline;
     }
   }
   h2 {
     margin-bottom: 20px;
-  }
-}
-
-section {
-  p:first-of-type {
-    padding-top: 10px;
   }
 }
 
