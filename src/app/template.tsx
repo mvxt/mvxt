@@ -30,7 +30,7 @@ export default function Template({
     { name: 'Music', href: '/music' },
     { name: 'Past Projects', href: '/past-projects' },
     { name: 'Résumé', href: '/resume' },
-    { name: 'Blog', href: 'https://blog.mvxt.me/' },
+    { name: 'Blog', href: 'https://medium.com/@michaelthanh' },
   ];
 
   const profiles = {
