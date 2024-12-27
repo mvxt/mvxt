@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Michael Vinh Xuan Thanh",
-  description: "Michael Vinh Xuan Thanh is a Lead Sales Engineer, software developer, and musician. Read more about his previous and ongoing projects."
+  description: "Michael Vinh Xuan Thanh is a Lead Sales Engineer, software developer, and musician. Read more about his work history, projects, and other information."
 };
 
 export default function RootLayout({

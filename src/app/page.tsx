@@ -14,6 +14,7 @@ export default function Home() {
         <li><b>I dabble in indie music, which you can find</b> on my <a href="/music">music page</a>.</li>
         <li><b>All of my past projects</b> can be found <a href="/projects">here</a>.</li>
         <li><b>For my technical work history</b>, visit <a href="/resume">my résumé</a>.</li>
+        <li><b>For random links and resources</b>, visit the <a href="/resources">resources page</a>.</li>
         <li><b>To contact me</b>, reach me at michael(DOT)thanh(AT)mvxt.me or via one of my social profiles in the footer.</li>
       </ul>
       <p>Thanks for stopping by.</p>

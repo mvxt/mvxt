@@ -27,9 +27,10 @@ export default function Template({
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Music', href: '/music' },
-    { name: 'Past Projects', href: '/past-projects' },
-    { name: 'Résumé', href: '/resume' },
+    { name: 'Music', href: '/music/' },
+    { name: 'Past Projects', href: '/past-projects/' },
+    { name: 'Résumé', href: '/resume/' },
+    { name: 'Resources', href: '/resources/' },
     { name: 'Blog', href: 'https://medium.com/@michaelthanh' },
   ];
 
@@ -84,7 +85,10 @@ export default function Template({
                 <div className="flex-1 flex items-center justify-center items-stretch">
                   <div className="hidden sm:block">
                     <div className="flex space-x-2">
-                      {navigation.map((page) => (
+                      {navigation.map((page) => {
+                        console.log('pathname:', pathname);
+                        console.log('page.href:', page.href);
+                        return (
                         <a
                           key={page.name}
                           href={page.href}
@@ -97,7 +101,7 @@ export default function Template({
                         >
                           {page.name}
                         </a>
-                      ))}
+                      )})}
                     </div>
                   </div>
                 </div>

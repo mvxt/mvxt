@@ -81,8 +81,11 @@ nav.navbar {
   margin-right: 5px;
 }
 
+.space-left {
+  margin-left: 5px;
+}
+
 .separator {
   margin-right: 5px;
   margin-left: 5px;
 }
-
