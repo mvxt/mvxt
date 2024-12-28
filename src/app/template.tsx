@@ -86,8 +86,6 @@ export default function Template({
                   <div className="hidden sm:block">
                     <div className="flex space-x-2">
                       {navigation.map((page) => {
-                        console.log('pathname:', pathname);
-                        console.log('page.href:', page.href);
                         return (
                         <a
                           key={page.name}
