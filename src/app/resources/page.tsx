@@ -1,6 +1,6 @@
 'use client'
 import { Fragment } from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Fuse from 'fuse.js'
 
@@ -31,7 +31,7 @@ export default function Downloads() {
     { title: 'Other Links', key: 'link' }
   ];
 
-  const data = [
+  const data = useMemo(() => [
     {
       name: 'Software Architecture/System Design Interview Prep (by Donne Martin)',
       type: 'github',
@@ -80,7 +80,7 @@ export default function Downloads() {
       link: 'https://open.spotify.com/playlist/3ZJgbUEIeQNyfzNNKjzyRu?si=_qB9vFvPQ9Wk0dBXmle5Zw',
       isFree: true
     }
-  ];
+  ], []);
 
   const displayItem = (item) => {
     let icon = null;
@@ -169,7 +169,7 @@ export default function Downloads() {
   return (
     <Fragment>
       <p>
-        Here's a directory of free and premium resources. Anything not owned by me is clearly labeled as such.
+        Here&apos;s a directory of free and premium resources. Anything not owned by me is clearly labeled as such.
       </p>
       <p>
         <b>DISCLAIMER:</b> These resources are provided as-is and without any guarantees or warranties. I assume no responsibility or liability for anything that happens should you use these resources.
