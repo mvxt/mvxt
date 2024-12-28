@@ -137,7 +137,7 @@ export default function Downloads() {
     }
   };
 
-  const getAllItemsForTab = () => {
+  const getAllItemsForTab = (currentTab) => {
     if (currentTab === 'all') {
       setItems(data);
     } else {
@@ -152,7 +152,7 @@ export default function Downloads() {
 
   useEffect(() => {
     setItems(data);
-  }, []);
+  });
 
   useEffect(() => {
     const options = {
@@ -163,7 +163,7 @@ export default function Downloads() {
   }, [items]);
 
   useEffect(() => {
-    getAllItemsForTab();
+    getAllItemsForTab(currentTab);
   }, [currentTab]);
 
   return (
