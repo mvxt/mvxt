@@ -79,6 +79,12 @@ export default function Downloads() {
       type: 'spotify',
       link: 'https://open.spotify.com/playlist/3ZJgbUEIeQNyfzNNKjzyRu?si=_qB9vFvPQ9Wk0dBXmle5Zw',
       isFree: true
+    },
+    {
+      name: 'amroc pro - Acoustic Room Mode Calculator (amcoustics)'
+      type: 'link',
+      link: 'https://amcoustics.com/tools/amroc-pro',
+      isFree: true
     }
   ], []);
 
