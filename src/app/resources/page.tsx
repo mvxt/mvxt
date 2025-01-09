@@ -81,7 +81,7 @@ export default function Downloads() {
       isFree: true
     },
     {
-      name: 'amroc pro - Acoustic Room Mode Calculator (amcoustics)'
+      name: 'amroc pro - Acoustic Room Mode Calculator (amcoustics)',
       type: 'link',
       link: 'https://amcoustics.com/tools/amroc-pro',
       isFree: true
