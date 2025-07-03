@@ -2,9 +2,9 @@
 import { Fragment } from 'react';
 import { useEffect, useMemo, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Fuse from 'fuse.js'
 
 import {
+  faGraduationCap,
   faLink
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -18,7 +18,6 @@ export default function Downloads() {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [items, setItems] = useState([]);
-  const [fuse, setFuse] = useState(null);
   const [search, setSearch] = useState('');
 
   const inactiveClass = "download-link";
@@ -26,6 +25,7 @@ export default function Downloads() {
 
   const categories = [
     { title: 'All', key: 'all' },
+    { title: 'Online Courses', key: 'course' },
     { title: 'GitHub Repos', key: 'github' },
     { title: 'Spotify Playlists', key: 'spotify' },
     { title: 'Other Links', key: 'link' }
@@ -33,31 +33,31 @@ export default function Downloads() {
 
   const data = useMemo(() => [
     {
-      name: 'Software Architecture/System Design Interview Prep (by Donne Martin)',
+      name: 'Software Architecture/System Design Interview Prep (Donne Martin)',
       type: 'github',
       link: 'https://github.com/donnemartin/system-design-primer',
       isFree: true
     },
     {
-      name: 'Coding Interview University (by John Washam)',
+      name: 'Coding Interview University (John Washam)',
       type: 'github',
       link: 'https://github.com/jwasham/coding-interview-university',
       isFree: true
     },
     {
-      name: 'Public APIs (by Various Contributors)',
+      name: 'Public APIs (Various Contributors)',
       type: 'github',
       link: 'https://github.com/public-apis/public-apis',
       isFree: true
     },
     {
-      name: 'The Front-End Checklist (by David Dias)',
+      name: 'The Front-End Checklist (David Dias)',
       type: 'link',
       link: 'https://frontendchecklist.io/',
       isFree: true
     },
     {
-      name: 'Coolors Color Palette Generator (by Fabrizio Bianchi)',
+      name: 'Coolors Color Palette Generator (Fabrizio Bianchi)',
       type: 'link',
       link: 'https://coolors.co/',
       isFree: true
@@ -85,12 +85,27 @@ export default function Downloads() {
       type: 'link',
       link: 'https://amcoustics.com/tools/amroc-pro',
       isFree: true
+    },
+    {
+      name: 'Tech Fundamentals Course (Adrian Cantrill)',
+      type: 'course',
+      link: 'https://learn.cantrill.io/courses/2022818/',
+      isFree: true
+    },
+    {
+      name: 'A Comprehensive Guide to Terraform (Yevgeniy Brikman/Gruntwork)',
+      type: 'link',
+      link: 'https://www.gruntwork.io/blog/a-comprehensive-guide-to-terraform?gi=ca2ab364c36d',
+      isFree: true
     }
   ], []);
 
   const displayItem = (item) => {
     let icon = null;
     switch (item.type) {
+      case 'course':
+        icon = faGraduationCap;
+        break;
       case 'github':
         icon = faGithub;
         break;
@@ -137,7 +152,7 @@ export default function Downloads() {
 
   const filterItems = (e) => {
     if (e.target.value) {
-      setItems(fuse.search(e.target.value).map(item => item.item));
+      //setItems(fuse.search(e.target.value).map(item => item.item));
     } else {
       getAllItemsForTab();
     }
@@ -161,14 +176,6 @@ export default function Downloads() {
   }, [data]);
 
   useEffect(() => {
-    const options = {
-      keys: ['name']
-    };
-
-    setFuse(new Fuse(items, options));
-  }, [items]);
-
-  useEffect(() => {
     getAllItemsForTab();
   });
 
@@ -180,6 +187,7 @@ export default function Downloads() {
       <p>
         <b>DISCLAIMER:</b> These resources are provided as-is and without any guarantees or warranties. I assume no responsibility or liability for anything that happens should you use these resources.
       </p>
+      {/*
       <div className="flex md:hidden items-center justify-center w-full mb-4">
         <input
           className="
@@ -204,7 +212,9 @@ export default function Downloads() {
           placeholder="Search items"
         />
       </div>
+      */}
       <div className="flex items-center justify-center">
+        {/*
         <input
           className="
             hidden
@@ -230,6 +240,7 @@ export default function Downloads() {
           onChange={filterItems}
           placeholder="Search items"
         />
+      */}
         <div className="inline-flex" role="group">
           {categories.map(tabButton)}
         </div>
