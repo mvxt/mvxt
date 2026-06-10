@@ -15,7 +15,7 @@ export default function Resume() {
       positions: [
         'Senior Solutions Engineer, Strategic (2025)',
       ],
-      skills: 'Technical Sales, Cloud Infrastructure, JavaScript/TypeScript, LLMs, AI Agents',
+      skills: 'Technical Sales, JavaScript/TypeScript, GCP, AWS, LLMs, AI Agents, MCP',
       description: 'Glean is an enterprise AI platform and work assistant that helps every team find answers, surface knowledge, and automate work. We turn company knowledge into instant, trusted intelligence so people spend less time prompting and searching and more time executing and delivering.',
       location: 'Denver, CO',
       href: 'https://www.glean.com/'
