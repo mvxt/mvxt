@@ -10,8 +10,19 @@ import {
 export default function Resume() {
   const jobs = [
     {
+      title: 'Glean',
+      date: 'Oct 2025 - Present',
+      positions: [
+        'Senior Solutions Engineer, Strategic (2025)',
+      ],
+      skills: 'Technical Sales, Cloud Infrastructure, JavaScript/TypeScript, LLMs, AI Agents',
+      description: 'Glean is an enterprise AI platform and work assistant that helps every team find answers, surface knowledge, and automate work. We turn company knowledge into instant, trusted intelligence so people spend less time prompting and searching and more time executing and delivering.',
+      location: 'Denver, CO',
+      href: 'https://www.glean.com/'
+    },
+    {
       title: 'FireHydrant',
-      date: 'Feb 2022 - Present',
+      date: 'Feb 2022 - Oct 2025',
       positions: [
         'Sr. Solutions Engineer (2022)',
         'Lead Solutions Engineer (2023)'

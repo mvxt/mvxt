@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <p>{"Hi, I'm Michael. My coworkers call me Vinny."}</p>
-      <p>Currently a Lead Solutions Engineer at <a href="https://firehydrant.io/">FireHydrant</a>. I work in technical sales, make music, write, and develop stuff.</p>
+      <p>Currently a Senior Solutions Engineer at <a href="https://www.glean.com/">Glean</a>. I work in technical sales, make music, write, and develop stuff.</p>
       <ul className="list-disc pl-8">
         <li><b>I dabble in indie music, which you can find</b> on my <a href="/music">music page</a>.</li>
         <li><b>All of my past projects</b> can be found <a href="/projects">here</a>.</li>
