@@ -10,8 +10,19 @@ import {
 export default function Resume() {
   const jobs = [
     {
+      title: 'Cursor',
+      date: 'Jul 2026 - Present',
+      positions: [
+        'Senior Field Engineer, Verticals (2026)',
+      ],
+      skills: 'Technical Sales, JavaScript/TypeScript, GCP, AWS, LLMs, AI Agents, MCP',
+      description: 'Cursor is an agentic coding platform for automating the entire product development lifecycle. We can meet your users where they\'re at, whether they are still writing code with AI assistance or automating their entire incident management or delivery pipelines.',
+      location: 'Denver, CO',
+      href: 'https://cursor.com/'
+    },
+    {
       title: 'Glean',
-      date: 'Oct 2025 - Present',
+      date: 'Oct 2025 - Jul 2026',
       positions: [
         'Senior Solutions Engineer, Strategic (2025)',
       ],
